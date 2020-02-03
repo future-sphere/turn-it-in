@@ -17,74 +17,64 @@ body {
   src: url("/ttnorms/regular.woff") format("woff");
 }
 
-@media only screen and (max-width: 767px) {
-  .tabletview-wrapper {
-    display: none;
-  }
+.tabletview-wrapper {
+  display: none;
+}
 
-  .laptop-wrapper {
-    display: none;
-  }
+.mobileview-wrapper {
+  position: relative;
+  background: linear-gradient(0deg, #6666ff 0, #002b80 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .mobileview-wrapper {
-    position: relative;
-    background: linear-gradient(0deg, #6666ff 0, #002b80 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-  }
+.mobileview-img-phone {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
 
-  .mobileview-img-phone {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 0px;
-  }
+.mobileview-container {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+}
 
-  .mobileview-container {
-    position: absolute;
-    top: 50px;
-    text-align: center;
-  }
+.mobileview-container img {
+  width: 25%;
+  z-index: 0;
+}
 
-  .mobileview-container img {
-    width: 25%;
-    z-index: -1;
-  }
+.mobileview-container p {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.5;
+  margin: 15px 30px;
+  letter-spacing: 1px;
+}
 
-  .mobileview-container p {
-    font-size: 24px;
-    font-weight: 900;
-    color: white;
-    line-height: 1.5;
-    margin: 15px 30px;
-    letter-spacing: 1px;
-  }
-
-  .mobileview-wrapper button {
-    width: calc(100% - 50px);
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    line-height: 24px;
-    padding: 22px 40px;
-    border-radius: 50px;
-    background-color: #ea3f58;
-    border: none;
-    position: absolute;
-    bottom: 40px;
-  }
+.mobileview-wrapper button {
+  width: calc(100% - 50px);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+  padding: 22px 40px;
+  border-radius: 50px;
+  background-color: #ea3f58;
+  border: none;
+  position: absolute;
+  bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .mobileview-wrapper {
-    display: none;
-  }
-
-  .laptop-wrapper {
     display: none;
   }
 
@@ -94,7 +84,7 @@ body {
   }
 
   .tabletview-title-container img {
-    width: 15%;
+    width: 150px;
     margin-top: 50px;
     margin-left: 30px;
   }
@@ -123,7 +113,7 @@ body {
     align-items: center;
     border-radius: 50%;
     border: 8px solid rgba(255, 255, 255, 0.1);
-    color: white;
+    color: #fff;
     margin: 40px 50px 50px 0px;
     background: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -211,8 +201,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #000;
-    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   .tabletview-content-title-text h2 {
@@ -223,7 +212,7 @@ body {
   }
 
   .tabletview-content-title-text span {
-    color: mediumseagreen;
+    color: rgb(60, 179, 113)
   }
 
   .tabletview-content-title button {
@@ -231,7 +220,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     border: 1px solid #f1f2f4;
-    background-color: white;
+    background-color: #fff;
     border-radius: 30px;
     padding: 20px;
   }
@@ -275,7 +264,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: black;
+    color: #000;
     margin-bottom: 10px;
   }
 
@@ -297,12 +286,8 @@ body {
     display: none;
   }
 
-  .laptop-wrapper {
-    display: none;
-  }
-
   .tabletview-title-container img {
-    width: 30%;
+    width: 150px;
     margin-top: 40px;
     margin-left: 30px;
   }
@@ -427,7 +412,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: black;
+    color: #000;
     margin-bottom: 10px;
   }
 }
@@ -438,23 +423,18 @@ body {
   }
 
   .tabletview-wrapper {
-    display: none;
-  }
-
-  .laptop-wrapper {
     position: relative;
-    margin: auto;
-    max-width: 1440px;
+    width: 100%;
     display: block;
   }
 
-  .laptop-title-container img {
-    width: 30%;
+  .tabletview-title-container img {
+    width: 150px;
     margin-top: 40px;
     margin-left: 30px;
   }
 
-  .laptop-title-container {
+  .tabletview-title-container {
     z-index: 1;
     width: 30%;
     height: 100vh;
@@ -464,7 +444,7 @@ body {
     background: linear-gradient(0deg, #6666ff 0, #002b80 100%);
   }
 
-  .laptop-title-block {
+  .tabletview-title-block {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -474,7 +454,7 @@ body {
     position: relative;
   }
 
-  .laptop-title-circle {
+  .tabletview-title-circle {
     width: 300px;
     height: 300px;
     display: flex;
@@ -483,56 +463,56 @@ body {
     align-items: center;
     border-radius: 50%;
     border: 8px solid rgba(255, 255, 255, 0.1);
-    color: white;
+    color: #fff;
     background: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .laptop-title-circle p {
+  .tabletview-title-circle p {
     font-weight: 500;
     font-size: 20px;
     padding-top: 20px;
   }
 
-  .laptop-title-circle h2 {
+  .tabletview-title-circle h2 {
     font-weight: bold;
     font-size: 60px;
     margin: 0px;
   }
 
-  .laptop-title-circle h4 {
+  .tabletview-title-circle h4 {
     font-weight: 500;
     font-size: 20px;
     margin-top: 30px;
     color: #ed882c;
   }
 
-  .laptop-title-text {
+  .tabletview-title-text {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .laptop-title-classroom {
+  .tabletview-title-classroom {
     position: absolute;
     top: 52%;
   }
 
-  .laptop-title-text h3 {
+  .tabletview-title-text h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
     color: #fff;
   }
 
-  .laptop-title-text p {
+  .tabletview-title-text p {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.5);
   }
 
-  .laptop-title-progress p {
+  .tabletview-title-progress p {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -540,17 +520,17 @@ body {
     padding-right: 50px;
   }
 
-  .laptop-title-progress span {
+  .tabletview-title-progress span {
     color: #ea3f58;
   }
 
-  .laptop-title-progress {
+  .tabletview-title-progress {
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     padding: 15px 30px 30px 30px;
   }
 
-  .laptop-progressbar {
+  .tabletview-progressbar {
     background-color: #f1f2f4;
     border-radius: 2px;
     width: 100%;
@@ -558,14 +538,14 @@ body {
     margin-top: 20px;
   }
 
-  .laptop-progressbar div {
+  .tabletview-progressbar div {
     background-color: #ea3f58;
     border-radius: 2px;
     width: 20%;
     height: 4px;
   }
 
-  .laptop-content-container {
+  .tabletview-content-container {
     z-index: 0;
     width: 70%;
     position: absolute;
@@ -574,7 +554,7 @@ body {
     flex-direction: column;
   }
 
-  .laptop-content-title {
+  .tabletview-content-title {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
@@ -583,12 +563,12 @@ body {
     padding: 0px 30px;
   }
 
-  .laptop-content-title-text {
+  .tabletview-content-title-text {
     margin-top: 60px;
     margin-left: 30px;
   }
 
-  .laptop-content-title-text p {
+  .tabletview-content-title-text p {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -596,52 +576,52 @@ body {
     opacity: 0.5;
   }
 
-  .laptop-content-title-text h2 {
+  .tabletview-content-title-text h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: #000;
   }
 
-  .laptop-content-title-text span {
-    color: mediumseagreen;
+  .tabletview-content-title-text span {
+    color: rgb(60, 179, 113);
   }
 
-  .laptop-content-title button {
+  .tabletview-content-title button {
     color: #ea3f58;
     font-weight: 500;
     font-size: 16px;
     border: 1px solid #f1f2f4;
-    background-color: white;
+    background-color: #fff;
     border-radius: 30px;
     padding: 15px 20px;
     margin-top: -50px;
   }
 
-  .laptop-content-title button i {
+  .tabletview-content-title button i {
     font-size: 20px;
     margin-right: 10px;
   }
 
-  .laptop-content-list-block {
+  .tabletview-content-list-block {
     display: flex;
     flex-direction: column;
   }
 
-  .laptop-content-list-block .gray h3 {
+  .tabletview-content-list-block .gray h3 {
     color: rgba(182, 191, 201, 0.75);
     border: 1px solid rgba(182, 191, 201, 0.75);
   }
 
-  .gray .laptop-content-list-text h4 {
+  .gray .tabletview-content-list-text h4 {
     color: rgba(182, 191, 201, 0.75);
   }
 
-  .gray .laptop-content-list-text p {
+  .gray .tabletview-content-list-text p {
     color: rgba(182, 191, 201, 0.75);
   }
 
-  .laptop-content-list {
+  .tabletview-content-list {
     width: 70%;
     display: flex;
     margin: 0px 60px;
@@ -649,7 +629,7 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .laptop-content-list h3 {
+  .tabletview-content-list h3 {
     width: 60px;
     height: 60px;
     border: 1px solid #8c99a6;
@@ -664,15 +644,15 @@ body {
     margin-right: 20px;
   }
 
-  .laptop-content-list-text h4 {
+  .tabletview-content-list-text h4 {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: black;
+    color: #000;
     margin-bottom: 10px;
   }
 
-  .laptop-content-list-text p {
+  .tabletview-content-list-text p {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
