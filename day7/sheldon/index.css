@@ -172,13 +172,13 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 32px 32px 56px;
+    padding: 50px 0px 32px 0px;
   }
 
   .head__container {
     max-width: 90%;
     width: 100%;
-    margin: auto;
+    margin-left: 57px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   }
 
