@@ -282,7 +282,7 @@ button {
     padding-right: 14px;
   }
 
-  .home-body-sections {
+  .home-body-section {
     width: 65%;
     display: flex;
     padding: 33px 25px 32px 0;
@@ -290,14 +290,9 @@ button {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   }
 
-  .home-body-sections:last-of-type {
+  .home-body-section:last-of-type {
     border-bottom: none;
   }
-  /* 
-  .home-body-sections:first-of-type
-  .home-body-sections:nth-of-type(2) {
-
-  } */
 
   .section-number {
     width: 56px;
@@ -419,7 +414,7 @@ button {
     right: 16px;
   }
 
-  .home-body-sections {
+  .home-body-section {
     margin-left: 48px;
   }
 }
@@ -477,7 +472,7 @@ button {
     font-size: 32px;
   }
 
-  .home-body-sections {
+  .home-body-section {
     margin-left: 72px;
   }
 
