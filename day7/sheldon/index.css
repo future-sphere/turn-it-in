@@ -220,7 +220,7 @@ img {
     color: black;
   }
 
-  .green {
+  .ad-day {
     color: aquamarine;
   }
 
@@ -239,7 +239,7 @@ img {
   }
 
   .oncoming-class {
-    padding: 50px 32px 32px 0px;
+    padding: 48px 32px 48px 0px;
     display: flex;
     align-items: center;
     max-width: 500px;
@@ -364,10 +364,6 @@ img {
     padding: 120px 72px 32px 72px;
   }
 
-  .oncoming-class {
-    margin: 0px 72px;
-  }
-
   .progress-bar {
     max-width: 380px;
   }
@@ -402,6 +398,7 @@ img {
 
   .oncoming-class {
     padding: 50px 32px 45px 0px;
+    margin: 0px 72px;
   }
 
   .logo {
