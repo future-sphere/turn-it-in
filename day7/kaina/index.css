@@ -1,7 +1,7 @@
 @font-face {
   font-family: "ttnorms";
-  src: url(/ttnorms/medium.woff);
-  src: url(/ttnorms/regular.woff);
+  src: url(./ttnorms/medium.woff);
+  src: url(./ttnorms/regular.woff);
 }
 
 body {
