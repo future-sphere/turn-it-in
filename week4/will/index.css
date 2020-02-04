@@ -1,20 +1,12 @@
 body {
   margin: 0px;
   font-family: "TTnorms", sans-serif;
-  height: 100vh;
-  width: 100%;
 }
 
 @font-face {
   font-family: "TTnorms";
-  src: url("/ttnorms/bold.woff2") format("woff2");
-  src: url("/ttnorms/light.woff2") format("woff2");
-  src: url("/ttnorms/medium.woff2") format("woff2");
-  src: url("/ttnorms/regular.woff2") format("woff2");
-  src: url("/ttnorms/bold.woff") format("woff");
-  src: url("/ttnorms/light.woff") format("woff");
-  src: url("/ttnorms/medium.woff") format("woff");
-  src: url("/ttnorms/regular.woff") format("woff");
+  src: url("/ttnorms/") format("woff2");
+  src: url("/ttnorms/") format("woff");
 }
 
 .tabletview-wrapper {
@@ -183,7 +175,6 @@ body {
   }
 
   .tabletview-content-container {
-    z-index: 0;
     position: absolute;
     width: 90%;
     top: 410px;
@@ -286,20 +277,8 @@ body {
     display: none;
   }
 
-  .tabletview-title-container img {
-    width: 150px;
-    margin-top: 40px;
-    margin-left: 30px;
-  }
-
   .tabletview-title-container {
-    z-index: 1;
     width: 35%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(0deg, #6666ff 0, #002b80 100%);
   }
 
   .tabletview-title-block {
@@ -307,7 +286,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     position: relative;
   }
 
@@ -329,36 +307,22 @@ body {
   }
 
   .tabletview-title-progress p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
     color: #000;
-    padding-right: 50px;
   }
 
   .tabletview-title-progress {
     background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 15px 30px 30px 30px;
   }
 
   .tabletview-progressbar {
     background-color: #f1f2f4;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    margin-top: 20px;
   }
 
   .tabletview-progressbar div {
     background-color: #ea3f58;
-    border-radius: 2px;
-    width: 20%;
-    height: 4px;
   }
 
   .tabletview-content-container {
-    z-index: 0;
     width: 65%;
     position: absolute;
     top: 0px;
@@ -370,9 +334,6 @@ body {
 
   .tabletview-content-title {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0px 30px;
   }
 
@@ -381,282 +342,74 @@ body {
     margin-left: 30px;
   }
 
-  .tabletview-content-title button {
-    color: #ea3f58;
-    font-weight: 400;
-    font-size: 16px;
-    border-radius: 30px;
-    padding: 15px 20px;
-    margin-top: -50px;
-  }
-
-  .tabletview-content-title button i {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-
-  .tabletview-content-list-block {
-    display: flex;
-    flex-direction: column;
-  }
-
   .tabletview-content-list {
     width: 70%;
     display: flex;
     margin: 0px 60px;
-    padding: 20px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .tabletview-content-list-text h4 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-    margin-bottom: 10px;
-  }
-}
+  @media only screen and (min-width: 1440px) {
+    .mobileview-wrapper {
+      display: none;
+    }
 
-@media only screen and (min-width: 1440px) {
-  .mobileview-wrapper {
-    display: none;
-  }
+    .tabletview-title-container {
+      width: 30%;
+    }
 
-  .tabletview-wrapper {
-    position: relative;
-    width: 100%;
-    display: block;
-  }
+    .tabletview-title-circle {
+      width: 300px;
+      height: 300px;
+    }
 
-  .tabletview-title-container img {
-    width: 150px;
-    margin-top: 40px;
-    margin-left: 30px;
-  }
+    .tabletview-title-circle p {
+      font-weight: 500;
+      font-size: 20px;
+    }
 
-  .tabletview-title-container {
-    z-index: 1;
-    width: 30%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(0deg, #6666ff 0, #002b80 100%);
-  }
+    .tabletview-title-circle h2 {
+      font-weight: bold;
+      font-size: 60px;
+    }
 
-  .tabletview-title-block {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 0px;
-    position: relative;
-  }
+    .tabletview-title-classroom {
+      position: absolute;
+      top: 52%;
+    }
 
-  .tabletview-title-circle {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 8px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
-  }
+    .tabletview-progressbar div {
+      background-color: #ea3f58;
+      border-radius: 2px;
+      width: 20%;
+      height: 4px;
+    }
 
-  .tabletview-title-circle p {
-    font-weight: 500;
-    font-size: 20px;
-    padding-top: 20px;
-  }
+    .tabletview-content-container {
+      width: 70%;
+    }
 
-  .tabletview-title-circle h2 {
-    font-weight: bold;
-    font-size: 60px;
-    margin: 0px;
-  }
+    .tabletview-content-list-block .gray h3 {
+      color: rgba(182, 191, 201, 0.75);
+      border: 1px solid rgba(182, 191, 201, 0.75);
+    }
 
-  .tabletview-title-circle h4 {
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 30px;
-    color: #ed882c;
-  }
+    .gray .tabletview-content-list-text * {
+      color: rgba(182, 191, 201, 0.75);
+    }
 
-  .tabletview-title-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .tabletview-content-list h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    }
 
-  .tabletview-title-classroom {
-    position: absolute;
-    top: 52%;
-  }
+    .tabletview-content-list-text h4 {
+      font-weight: 600;
+      font-size: 20px;
+    }
 
-  .tabletview-title-text h3 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 24px;
-    color: #fff;
+    .tabletview-content-list-text p {
+      font-weight: 600;
+      font-size: 16px;
+    }
   }
-
-  .tabletview-title-text p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  .tabletview-title-progress p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000;
-    padding-right: 50px;
-  }
-
-  .tabletview-title-progress span {
-    color: #ea3f58;
-  }
-
-  .tabletview-title-progress {
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 15px 30px 30px 30px;
-  }
-
-  .tabletview-progressbar {
-    background-color: #f1f2f4;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    margin-top: 20px;
-  }
-
-  .tabletview-progressbar div {
-    background-color: #ea3f58;
-    border-radius: 2px;
-    width: 20%;
-    height: 4px;
-  }
-
-  .tabletview-content-container {
-    z-index: 0;
-    width: 70%;
-    position: absolute;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tabletview-content-title {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 30px;
-  }
-
-  .tabletview-content-title-text {
-    margin-top: 60px;
-    margin-left: 30px;
-  }
-
-  .tabletview-content-title-text p {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000;
-    opacity: 0.5;
-  }
-
-  .tabletview-content-title-text h2 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000;
-  }
-
-  .tabletview-content-title-text span {
-    color: rgb(60, 179, 113);
-  }
-
-  .tabletview-content-title button {
-    color: #ea3f58;
-    font-weight: 500;
-    font-size: 16px;
-    border: 1px solid #f1f2f4;
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 15px 20px;
-    margin-top: -50px;
-  }
-
-  .tabletview-content-title button i {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-
-  .tabletview-content-list-block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tabletview-content-list-block .gray h3 {
-    color: rgba(182, 191, 201, 0.75);
-    border: 1px solid rgba(182, 191, 201, 0.75);
-  }
-
-  .gray .tabletview-content-list-text h4 {
-    color: rgba(182, 191, 201, 0.75);
-  }
-
-  .gray .tabletview-content-list-text p {
-    color: rgba(182, 191, 201, 0.75);
-  }
-
-  .tabletview-content-list {
-    width: 70%;
-    display: flex;
-    margin: 0px 60px;
-    padding: 20px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .tabletview-content-list h3 {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #8c99a6;
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #ea3f58;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-
-  .tabletview-content-list-text h4 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-    margin-bottom: 10px;
-  }
-
-  .tabletview-content-list-text p {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #8c99a6;
-    margin-top: 0px;
-  }
-}
