@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>登录页面</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <nav>
+        <img src="http://gtms04.alicdn.com/tps/i4/TB14nhUIVXXXXXAXpXXlu.FQpXX-300-124.png" alt="logo" />
+        <p>账户登录</p>
+    </nav>
+    <hr />
+    <section class="login-wrapper">
+        <div class="login-container" id="login-container">
+            <a onclick="handleClick()" href="#"><img src="scan.png" alt="scan" /></a>
+            <div class="login-block">
+                <h3>密码登录</h3>
+                <form>
+                    <div class="longin-form-input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="会员名/邮箱" />
+                    </div>
+                    <div class="longin-form-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" />
+                    </div>
+                    <button type="submit">登录</button>
+                </form>
+                <button class="login-button"><i class="fab fa-facebook-square"></i>Log In</button>
+            </div>
+            <div>
+                <div class="login-footer-container">
+                    <a href="#">手机号登录</a>
+                    <div class="login-footer-right">
+                        <a href="#">忘记密码</a>
+                        <a href="#">忘记会员名</a>
+                        <a href="#">免费注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scan login-container" id="scan-login-container">
+            <a href="#" onclick="handleSwitchBack()"><img class="scan-pclogo" src="pc.png" alt="scan" /></a>
+            <div class="login-block">
+                <h3>手机扫码，安全登录</h3>
+            </div>
+            <img class="scan-qecode" src="QEcode.png" alt="QE">
+            <div class="scan-open-container">
+                <img src="icon.png" alt="icon">
+                <div class="scan-open-right">
+                    <span>打开</span><a href="">手机淘宝</a> <span> | </span> <a href="">手机天猫</a>
+                    <br>
+                    <span>扫一扫登录</span>
+                </div>
+            </div>
+            <div class="scan-footer">
+                <a href="#">密码登录</a>
+                <a href="#">免费注册</a>
+            </div>
+        </div>
+    </section>
+    <div class="helpbar-wrapper">
+        <div class="helpbar-container">
+            <img src="protect.svg" alt="logo">
+            <div class="helpbar-block">
+                <h4>淘宝网消费者保障</h4>
+                <p>未收到货，全额退款；商品与描述不符，退货退款</p>
+            </div>
+        </div>
+        <div class="helpbar-container">
+            <img src="alipay.svg" alt="logo">
+            <div class="helpbar-block">
+                <h4>支付宝担保交易</h4>
+                <p>没有您的同意，我们不会将您的钱款交付给卖家</p>
+            </div>
+        </div>
+        <div class="helpbar-container">
+            <img src="24h.svg" alt="logo">
+            <div class="helpbar-block">
+                <h4>24小时在线帮助</h4>
+                <p>购物小帮手，为您提供无忧购物体验</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-firstline infonav">
+            <a href="">阿里巴巴集团</a>
+            <a href="">淘宝网</a>
+            <a href="">天猫</a>
+            <a href="">聚划算</a>
+            <a href="">全球速卖通</a>
+            <a href="">阿里巴巴国际交易市场</a>
+            <a href="">1688</a>
+            <a href="">阿里妈妈</a>
+            <a href="">阿里云计算</a>
+            <a href="">YunOS</a>
+            <a href="">万网</a>
+            <a href="">淘宝旅行</a>
+            <a href="">虾米</a>
+            <a href="">来往</a>
+            <a class="border-clear" href="">支付宝</a>
+        </div>
+        <div class="footer-secondline infonav">
+            <a href="">关于淘宝</a>
+            <a href="">合作伙伴</a>
+            <a href="">销售中心</a>
+            <a href="">知识产权</a>
+            <a href="">廉政举报</a>
+            <a href="">联系客服</a>
+            <a href="">开放平台</a>
+            <a href="">诚征英才</a>
+            <a href="">联系我们</a>
+            <a href="">网站地图</a>
+            <a href="">法律声明</a>
+            <span><em>© 2003-2017 Taobaobei.com 版权所有</em></span>
+        </div>
+        <div class="footer-thirdline infonav">
+            <p>网络文化经营许可证：<a> 文网文[2010]040号</a></p>
+            <p>增值电信业务经营许可证：浙B2-20080224-1</p>
+            <p class="border-clear">信息网络传播视听节目许可证：1109364号</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a62b29f649.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

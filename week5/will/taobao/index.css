@@ -1,0 +1,292 @@
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #6c6c6c;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
+        "\5b8b\4f53", sans-serif;
+}
+
+a:hover {
+    color: #f40;
+}
+
+.login-footer-container a:hover {
+    color: #f40;
+}
+
+nav img {
+    width: 150px;
+    margin: 25px 20px 15px 0px;
+}
+
+nav p {
+    margin-top: 28px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 990px;
+    margin: auto;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+section {
+    width: 990px;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.login-container {
+    border: 1px solid #e8e8e8;
+    border-top: 2px solid #f40;
+    box-shadow: 0 2px 6px #acacac;
+    width: 350px;
+    height: 395px;
+    margin-top: 35px;
+    z-index: 0;
+    position: relative;
+}
+
+.login-container img {
+    width: 200px;
+    position: absolute;
+    right: 3px;
+    top: 15px;
+    z-index: 1;
+}
+
+.login-block {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
+        "\5b8b\4f53", sans-serif;
+}
+
+.login-block h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #3c3c3c;
+}
+
+.longin-form-input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.longin-form-input i {
+    width: 40px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 1px;
+}
+
+.longin-form-input input {
+    width: 248px;
+    height: 37px;
+    padding-left: 48px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.login-block form button {
+    width: 301px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #f40;
+    border-radius: 3px;
+    border: none;
+    letter-spacing: 6px;
+}
+
+.login-block form button:hover {
+    background-color: #f52b00;
+}
+
+.login-button {
+    background-color: #3b55a0;
+    color: #fff;
+    font-size: 11px;
+    width: 64px;
+    height: 22px;
+    border: none;
+    position: relative;
+    border-radius: 3px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.login-button i {
+    font-size: 18px;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+}
+
+.login-footer-container {
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-footer-container a {
+    color: #6c6c6c;
+    margin-right: 6px;
+}
+
+.helpbar-wrapper {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 2px solid #f40;
+    background-color: #fafbfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.helpbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.helpbar-container img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.helpbar-block h4 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.helpbar-block p {
+    font-size: 12px;
+    color: #888;
+    width: 200px;
+    margin-top: 5px;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
+        "\5b8b\4f53", sans-serif;
+}
+
+.scan a img {
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+
+.scan .scan-qecode {
+    width: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 120px;
+}
+
+.scan-open-container {
+    position: absolute;
+    display: flex;
+    bottom: 80px;
+    left: calc(50% - 95px);
+}
+
+.scan-open-right span {
+    font-size: 12px;
+    color: #9c9c9c;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
+        "\5b8b\4f53", sans-serif;
+}
+
+.scan-open-right a {
+    font-size: 12px;
+    color: #ff4400;
+}
+
+.scan .scan-open-container img {
+    position: static;
+    width: 34px;
+    height: 36px;
+    margin-right: 12px;
+}
+
+.scan-footer {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+}
+
+.scan-footer a {
+    margin-right: 15px;
+}
+
+
+footer {
+    width: 990px;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.footer-firstline a {
+    padding: 0px 10px 0px 5px;
+    border-right: 1px solid #485065;
+    margin-left: -2px;
+}
+
+.footer-secondline a {
+    margin: 0px 2px;
+}
+
+.footer-secondline span {
+    color: #9c9c9c;
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+.footer-thirdline p {
+    color: #9c9c9c;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
+        "\5b8b\4f53", sans-serif;
+    font-size: 12px;
+    display: inline;
+    padding: 0px 10px 0px 6px;
+    margin-left: -4px;
+    border-right: 1px solid #485065;
+}
+
+.infonav .border-clear {
+    border-right: none;
+}
+
+.infonav {
+    margin-bottom: 9px;
+}
