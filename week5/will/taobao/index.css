@@ -67,7 +67,6 @@ section {
 }
 
 .login-block {
-  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +90,7 @@ section {
 
 .login-form-input i {
   width: 40px;
-  height: 41px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,15 +104,15 @@ section {
 
 .login-form-input input {
   width: 248px;
-  height: 37px;
+  height: 36px;
   padding-left: 48px;
   font-size: 14px;
   font-weight: 200;
 }
 
 .login-block form button {
-  width: 301px;
-  height: 43px;
+  width: 300px;
+  height: 42px;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -143,7 +142,7 @@ section {
 .login-button i {
   font-size: 18px;
   position: absolute;
-  left: 3px;
+  left: 2px;
   top: 2px;
 }
 
@@ -260,30 +259,34 @@ footer {
   padding: 15px 0px;
 }
 
-.footer-firstline a {
+.footer-uperline a {
   padding: 0px 10px 0px 5px;
   border-right: 1px solid #485065;
-  margin-left: -2px;
+  margin-left: 0px;
 }
 
-.footer-secondline a {
+.footer-middleline a {
   margin: 0px 2px;
 }
 
-.footer-secondline span {
+.footer-middleline {
+  margin-left: 2px;
+}
+
+.footer-middleline span {
   color: #9c9c9c;
   font-size: 12px;
   margin-left: 30px;
 }
 
-.footer-thirdline p {
+.footer-lowerline p {
   color: #9c9c9c;
   font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
     "\5b8b\4f53", sans-serif;
   font-size: 12px;
   display: inline;
   padding: 0px 10px 0px 6px;
-  margin-left: -4px;
+  margin-left: 0px;
   border-right: 1px solid #485065;
 }
 
@@ -292,5 +295,5 @@ footer {
 }
 
 .infonav {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
