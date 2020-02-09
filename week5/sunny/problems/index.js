@@ -1,20 +1,18 @@
 const isString = string => {
-  if (typeof string == "string") {
+  if (typeof string === "string") {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 console.log(isString("future sphere"));
 console.log(isString(35));
 
 const isBlank = blank => {
-  if (blank.length == 0) {
+  if (blank.length === 0) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 console.log(isBlank(""));
@@ -59,5 +57,3 @@ const noSpace = str => {
   }
   return str;
 };
-
-
