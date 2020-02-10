@@ -1,21 +1,19 @@
 // --------------------------------------first question
-// const isString = str => {
+// const isNumber = str => {
+//   console.log(+str, str);
 //   if (str === +str) {
-//     return false;
-//   } else {
 //     return true;
 //   }
+//   return false;
 // };
-// console.log(isString("jiaolian"));
-// console.log(isString("123"));
+// console.log(isNumber("jiaolian"));
 
 //--------------------------------------second question
 // const isBlank = str => {
 //   if (str == "") {
 //     return true;
-//   } else {
-//     return false;
 //   }
+//     return false;
 // };
 // console.log(isBlank(""));
 // console.log(isBlank("yu"));
@@ -37,7 +35,6 @@
 
 //--------------------------------------fifth question
 // const camelize = str => {
-//   //   return str.charAt(0).toUpperCase() + str.slice(1, str.length);
 //   let arr = str.split(" ");
 //   let answer = [];
 //   for (var i = 0; i < arr.length; i++) {
@@ -54,6 +51,14 @@
 // };
 // console.log(camelize("shelDon love coding"));
 
+// const camelize = str => {
+//   let wordArr = str.split(" ");
+//   wordArr[1] =
+//     wordArr[1][0].toUpperCase() + wordArr[1].slice(1, wordArr[1].length);
+//   return wordArr.join("");
+// };
+// console.log(camelize("sheldon love"));
+
 //--------------------------------------sixth question
 // const randomize = (min, max) => {
 //   return Math.floor(Math.random() * (max - min) + min);
@@ -67,12 +72,12 @@
 // console.log(strip(" 123 15212 200 "));
 
 // const striper = str => {
-//   if (str[0] === " " && str[length - 1] === " ") {
-//     return str.slice(1, str[length - 2]);
+//   if (str[0] === " " && str[str.length - 1] === " ") {
+//     return str.slice(1, str[str.length - 2]);
 //   } else if (str[0] === " ") {
-//     return str.slice(1, str[length - 1]);
+//     return str.slice(1, str[str.length - 1]);
 //   } else if (str[length - 1] === " ") {
-//     return str.slice(0, str[length - 2]);
+//     return str.slice(0, str[str.length - 2]);
 //   } else {
 //     return str;
 //   }
@@ -126,3 +131,25 @@
 //   }
 // };
 // console.log(formatPhoneNumber(".13476*+*547-566"));
+
+// const formatPhoneNumber = str => {
+//   let strArr = str.split("");
+//   let numArr = strArr.filter(v => v !== "(" && v !== ")" && v !== "-");
+//   if (numArr.length < 10) {
+//     //too short
+//     return false;
+//   }
+//   if (numArr.length === 11 && numArr[0] == 1) {
+//     //for mofo that adding 1 in the front
+//     numArr.shift();
+//   }
+//   if (numArr.length >= 11) {
+//     //too long
+//     return false;
+//   }
+//   numArr.splice(0, 0, "(");
+//   numArr.splice(4, 0, ")-");
+//   numArr.splice(8, 0, "-");
+//   return numArr.join("");
+// };
+// console.log(formatPhoneNumber("13476547566"));
