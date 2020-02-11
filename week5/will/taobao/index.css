@@ -259,27 +259,28 @@ footer {
   padding: 15px 0px;
 }
 
-.footer-uperline a {
-  padding: 0px 10px 0px 5px;
+.footer-upper-line a {
+  padding: 0px 10px 0px 6px;
   border-right: 1px solid #485065;
   margin-left: 0px;
 }
 
-.footer-middleline a {
-  margin: 0px 2px;
+.footer-middle-line a {
+  margin: 0px 2px 0px;
+
 }
 
-.footer-middleline {
-  margin-left: 2px;
+.footer-middle-line {
+  margin-left: 4px;
 }
 
-.footer-middleline span {
+.footer-middle-line span {
   color: #9c9c9c;
   font-size: 12px;
   margin-left: 30px;
 }
 
-.footer-lowerline p {
+.footer-lower-line p {
   color: #9c9c9c;
   font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB",
     "\5b8b\4f53", sans-serif;

@@ -1,9 +1,8 @@
 const isString = input => {
   if (typeof input == "string") {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 // console.log(isString("8"));
@@ -11,9 +10,8 @@ const isString = input => {
 const isBlank = input => {
   if (input.length === 0) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 // console.log(isBlank(""));
@@ -27,28 +25,30 @@ const stringParameterize = input => input.replace(/ /g, "-").toLowerCase();
 // console.log(stringParameterize("Robin Hood from China"));
 
 const camelize = input => {
-  const x = input.split(" ").join("");
-  const y = x.substr(0, 1).toLowerCase();
-  const z = x.slice(1);
-  return y + z;
+  const initial = input
+    .split(" ")
+    .join("")
+    .substr(0, 1)
+    .toLowerCase();
+  const residualWord = input
+    .split(" ")
+    .join("")
+    .slice(1);
+  return initial + residualWord;
 };
 
 // console.log(camelize("JavaScript Exercises"));
 
-const randomize = (min, max) => {
-  let x = Math.random();
-  let y = min + x * (max - min);
-  return Math.floor(y);
-};
+const randomize = (min, max) => Math.floor(min + Math.random() * (max - min));
 
 // console.log(randomize(10, 15));
 
 const spaceTrailing = input => {
-  const l = input.length;
-  if (input.slice(l - 1) == " " && input.slice(0, 1) == " ") {
-    return input.substring(1, l - 1);
-  } else if (input.slice(l - 1) == " ") {
-    return input.substring(0, l - 1);
+  const length = input.length;
+  if (input.slice(length - 1) == " " && input.slice(0, 1) == " ") {
+    return input.substring(1, length - 1);
+  } else if (input.slice(length - 1) == " ") {
+    return input.substring(0, length - 1);
   } else if (input.slice(0, 1) == " ") {
     return input.substring(1);
   }
@@ -56,46 +56,87 @@ const spaceTrailing = input => {
 
 // console.log(spaceTrailing(" Robin Hood from China "));
 
+// const phoneNumberFormating = num => {
+//   const input = num.replace(/ /g, "");
+//   let length = input.length;
+//   if (length == 11 && input.slice(0, 1) == 1) {
+//     const firstPart = input.slice(1, 4);
+//     const secondPart = input.slice(4, 7);
+//     const thirdPart = input.slice(7);
+//     return "(" + firstPart + ")" + "-" + secondPart + "-" + thirdPart;
+//   } else if (length > 10 && isNaN(input) == false) {
+//     return "false (not a valid phone number)";
+//   } else if (length < 10 && isNaN(input) == false) {
+//     return "false (not a valid phone number)";
+//   } else if (length == 10) {
+//     const firstPart = input.slice(0, 3);
+//     const secondPart = input.slice(3, 6);
+//     const thirdPart = input.slice(6);
+//     return "(" + firstPart + ")" + "-" + secondPart + "-" + thirdPart;
+//   } else if (
+//     length == 14 &&
+//     input.slice(0, 1) == "(" &&
+//     input.slice(4, 6) == ")-" &&
+//     input.slice(9, 10) == "-"
+//   ) {
+//     return "true (already formatted)";
+//   } else if (
+//     length > 10 ||
+//     input.indexOf("(") !== "-1" ||
+//     input.indexOf(")") !== "-1" ||
+//     input.indexOf("-") !== "-1"
+//   ) {
+//     const firstFormat = input.replace("(", "");
+//     const secondFormat = firstFormat.replace(")", "");
+//     const finalFormat = secondFormat.replace(/-/g, "");
+//     return phoneNumberFormating(finalFormat)
+//   }
+//   return "false (not a valid phone number)";
+// };
+
 const phoneNumberFormating = num => {
-  const input = num.replace(/ /g, "");
-  let n = input.length;
-  if (n == 11 && input.slice(0, 1) == 1) {
-    const a = input.slice(1, 4);
-    const b = input.slice(4, 7);
-    const c = input.slice(7);
-    return "(" + a + ")" + "-" + b + "-" + c;
-  } else if (n > 10 && isNaN(input) == false) {
-    return "false (not a valid phone number)";
-  } else if (n < 10 && isNaN(input) == false) {
-    return "false (not a valid phone number)";
-  } else if (n == 10) {
-    const a = input.slice(0, 3);
-    const b = input.slice(3, 6);
-    const c = input.slice(6);
-    return "(" + a + ")" + "-" + b + "-" + c;
+  // const newNumArr = [];
+  const numArr = num.split("");
+
+  // numArr.forEach(v => {
+  //   if (+v == v) {
+  //     newNumArr.push(v);
+  //   }
+  // });
+
+  // for (let i = 0; i <= numArr.length; i++) {
+  //   if (+numArr[i] == numArr[i]) {
+  //     newNumArr.push(numArr[i]);
+  //   }
+  // }
+
+  const newNumArr = numArr.map(v => {
+    if (+v == v) {
+      return v;
+    }
+  });
+
+  const input = newNumArr.join("");
+  let length = input.length;
+  if (length == 11 && input.slice(0, 1) == 1) {
+    const firstPart = input.slice(1, 4);
+    const secondPart = input.slice(4, 7);
+    const thirdPart = input.slice(7);
+    return "(" + firstPart + ")" + "-" + secondPart + "-" + thirdPart;
   } else if (
-    n == 14 &&
-    input.slice(0, 1) == "(" &&
-    input.slice(4, 6) == ")-" &&
-    input.slice(9, 10) == "-"
+    num.length == 14 &&
+    num.slice(0, 1) == "(" &&
+    num.slice(4, 6) == ")-" &&
+    num.slice(9, 10) == "-"
   ) {
     return "true (already formatted)";
-  } else if (
-    n > 10 ||
-    input.indexOf("(") !== "-1" ||
-    input.indexOf(")") !== "-1" ||
-    input.indexOf("-") !== "-1"
-  ) {
-    const x = input.replace("(", "");
-    const y = x.replace(")", "");
-    const z = y.replace(/-/g, "");
-    const a = z.slice(0, 3);
-    const b = z.slice(3, 6);
-    const c = z.slice(6);
-    return "(" + a + ")" + "-" + b + "-" + c;
-  } else {
-    return "false (not a valid phone number)";
+  } else if (length == 10) {
+    const firstPart = input.slice(0, 3);
+    const secondPart = input.slice(3, 6);
+    const thirdPart = input.slice(6);
+    return "(" + firstPart + ")" + "-" + secondPart + "-" + thirdPart;
   }
+  return "false (not a valid phone number)";
 };
 
 console.log(phoneNumberFormating("6466397087"));
