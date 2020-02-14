@@ -1,0 +1,189 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/4fd280ef84aefc97b18a4abc/1513270240567-WYPL26IJKVG2WPZ9M0C7/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/cool-nyc-images-21945-22498-hd-wallpapers.jpg.png?format=2500w);
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.login-wrapper {
+  height: 100vh;
+  max-width: 880px;
+  margin: auto;
+  position: relative;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 880px;
+  position: absolute;
+  top: 95px;
+}
+
+.login-container img {
+  width: 250px;
+  height: 99px;
+}
+
+.login-container .login-block {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 415px;
+  height: 315px;
+  box-shadow: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  font-family: "microsoft Yahei", "微软雅黑", SimHei, "黑体", "Hiragino Sans GB";
+}
+
+.login-block h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 5px 0px 15px 0px;
+}
+
+.login-block p {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  color: #666666;
+}
+
+.login-block a {
+  text-decoration: none;
+  color: #3481cf;
+}
+
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input-container input {
+  width: 258px;
+  padding: 10px 0px 10px 10px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  height: 18px;
+  margin-bottom: 14px;
+  height: 18px;
+  font-size: 13px;
+  font-family: Verdana, Tahoma, Arial;
+  color: #eee;
+}
+
+.login-input-container button {
+  background-color: #86ce30;
+  color: #fff;
+  width: 272px;
+  height: 40px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.scan img:hover {
+  transition: all 0.2s linear;
+  transform: translateX(-40px);
+}
+
+.scan p {
+  margin: 0px;
+  line-height: 23px;
+}
+
+.scan img {
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  border: 1px solid #eee;
+  margin-top: 30px;
+}
+
+.login-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  margin-bottom: 5px;
+  text-align: right;
+  color: #666
+}
+
+.login-footer a {
+  font-size: 12px;
+  color: #666;
+}
+
+.login-footer span {
+  font-weight: 200;
+  font-size: 10px;
+  margin: 0px 3px;
+}
+
+footer {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  position: absolute;
+  bottom: 30px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer p {
+  line-height: 22px;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo-container span {
+  width: 73px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-container span:hover {
+  transition: all 0.1s linear;
+  transform: translateY(-8px)
+}
+
+.footer-logo-container .winphone p {
+  margin-bottom: -13px;
+  margin-top: 5px;
+  line-height: 15px;
+}
+
+.footer-logo-container img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-logo-container p {
+  margin: 0px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer-text p {
+  margin: 3px 0px;
+}
