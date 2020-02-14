@@ -157,63 +157,6 @@
 
 const data = 1234567891;
 const formatPhoneNumber = (data, x) => {
-  switch (true) {
-    case x == 14 &&
-      data.slice(0, 1) == "(" &&
-      data.slice(4, 6) == ")-" &&
-      data.slice(10, 11) == "-" &&
-      typeof data.slice(1, 4) === Number &&
-      typeof data.slice(6, 10) === Number &&
-      typeof data.slice(11, 14) === Number:
-      return "true(already formatted)";
-    case data.length == 10:
-      return (
-        "(" +
-        data.substring(0, 2) +
-        ")-" +
-        data.substring(3, 5) +
-        "-" +
-        data.substring(6, 9)
-      );
-    case x <= 13 &&
-      data.slice(0, 1) == "(" &&
-      data.slice(4, 6) == ")-" &&
-      data.slice(10, 11) == "-" &&
-      typeof data.slice(1, 4) === Number &&
-      typeof data.slice(6, 10) === Number &&
-      typeof data.slice(11, 14) === Number:
-      return "true(already formatted)";
-    case x == 14 &&
-      data.slice(0, 1) == "(" &&
-      data.slice(4, 6) == ")-" &&
-      data.slice(10, 11) == "-" &&
-      typeof data.slice(1, 4) === Number &&
-      typeof data.slice(6, 10) === Number &&
-      typeof data.slice(11, 14) === Number:
-      return "true(already formatted)";
-    case data.length == 14 &&
-      data.slice(0, 1) == "(" &&
-      data.slice(4, 6) == ")-" &&
-      data.slice(10, 11) == "-" &&
-      typeof data.slice(1, 4) === Number &&
-      typeof data.slice(6, 10) === Number &&
-      typeof data.slice(11, 14) === Number:
-      return "true(already formatted)";
-    case data.length == 14 &&
-      data.slice(0, 1) == "(" &&
-      data.slice(4, 6) == ")-" &&
-      data.slice(10, 11) == "-" &&
-      typeof data.slice(1, 4) === Number &&
-      typeof data.slice(6, 10) === Number &&
-      typeof data.slice(11, 14) === Number:
-      return "true(already formatted)";
-    case data.length == 14 &&
-      data.slice(0, 1) == "(" &&
-      data.slice(4, 6) == ")-" &&
-      data.slice(10, 11) == "-" &&
-      typeof data.slice(1, 4) === Number &&
-      typeof data.slice(6, 10) === Number &&
-      typeof data.slice(11, 14) === Number:
-      return "true(already formatted)";
+  if (str.indexOf("9")) {
   }
 };
