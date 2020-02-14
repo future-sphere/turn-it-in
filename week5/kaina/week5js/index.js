@@ -25,6 +25,7 @@ const isString = kaina => {
     return false;
   }
 };
+
 // console.log(isString("future sphere"));
 // console.log(isString(35));
 // console.log(isString("will"));
@@ -87,3 +88,43 @@ const stripSpace = space => {
 // };
 
 // console.log(formatPhoneNumber(6466397087));
+
+const isStr = str => {
+  if (typeof str === "string") {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isStr("future"));
+console.log(isStr(123));
+
+const isBlk = blk => {
+  if (blk.length === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isBlk(""));
+
+const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
+
+console.log(random(10, 15));
+
+const strPar = par =>
+  par
+    .toLowerCase()
+    .split(" ")
+    .join("-");
+
+console.log(strPar("Robin Hood from China"));
+
+const cam = letter => {
+  const arr = letter.toLowerCase().split(" ");
+  return arr[0] + arr[1][0].toUpperCase() + arr[1].slice(1);
+};
+
+console.log(cam("Javascrip Exercise"));
