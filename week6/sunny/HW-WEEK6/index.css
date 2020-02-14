@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+b {
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  /* background-color: rosybrown; */
+}
+
+.mobile-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 15px 164px;
+}
+
+.home-description {
+  width: inherit;
+  position: relative;
+  z-index: 1;
+  color: #3b3322;
+  background: rgba(163, 57, 255, 0.0116641);
+}
+
+.description-vedio {
+  width: inherit;
+  height: 287px;
+  background-image: url(Rectangle.png);
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-vedio div {
+  width: 88px;
+  height: 73px;
+  background-color: rgba(225, 225, 225, 0.19);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-vedio div div {
+  width: 73px;
+  height: 61px;
+  background-color: rgba(225, 225, 225, 0.19);
+}
+
+.description-vedio div div div {
+  width: 59px;
+  height: 49px;
+  background-color: rgba(225, 225, 225, 0.19);
+}
+
+.description-vedio img {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.description-title {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  padding: 36px 0;
+}
+
+.description-paragraph {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 4px 25px 7px 25px;
+}
+
+.description-button {
+  display: flex;
+  justify-content: center;
+  padding: 33px 0;
+}
+
+.description-button button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #ff4f4f;
+  padding: 15px 41px;
+  border-radius: 4px;
+}
+
+.home-icon {
+  width: inherit;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.home-icon div {
+  padding: 15px 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home-icon button {
+  font-size: 25px;
+  background-color: #ffffff;
+  padding: 22px 24px 15px 24px;
+  border: 2px solid #ff4f4f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.home-icon button:hover {
+  color: #ffffff;
+  background-color: #ff4f4f;
+}
+
+.home-icon svg {
+  fill: #ff4f4f;
+}
+
+.home-icon svg:hover {
+  fill: #ffffff;
+}
+
+.home-icon h5 {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 600;
+  color: #2f281e;
+  margin-bottom: 13px;
+}
+
+.home-icon p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #5c5040;
+}
+
+.home-about {
+  text-align: center;
+  padding: 30px 25px;
+}
+
+.home-about h4 {
+  font-size: 34px;
+  line-height: 51px;
+  font-weight: 700;
+  color: #342d20;
+}
+
+.home-about p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #544837;
+}
+
+.home-about-card-container {
+}
+
+.card {
+  text-align: center;
+}
+
+.first-card {
+  padding: 30px 44px;
+}
+
+.second-card {
+  padding: 30px 25px;
+}
+
+.card h4 {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #111111;
+  margin: 30px 0;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.home-about-image-container {
+  padding: 0 38.5px;
+}
+
+.image-card {
+  max-width: 348px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image-card h4 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #2f281e;
+  margin: 23px 0 11px 0;
+}
+
+.image-card p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #5d523d;
+  padding-bottom: 42px;
+}
+
+footer {
+  color: #544837;
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid rgba(188, 208, 229, 0.496913);
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(188, 208, 229, 0.496913);
+}
+
+footer h5 {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 16px 23px 80px 23px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+@media only screen and (min-width: 1400px) {
+}
