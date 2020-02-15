@@ -25,7 +25,7 @@ console.log(findNum([1, 2, 3, 4, 5], 5)); //Output: Index of 5 is 4
 console.log(findNum([1, 2, 3, 4, 5, 6], 2)); //Output: Index of 2 is 1
 
 //Write a JavaScript program to compute the sum of an array of integers
-// reduce
+
 const sumOf = arr => {
   let total = 0;
   for (i = 0; i < arr.length; i++) {
@@ -50,12 +50,6 @@ console.log(sum([1, 2, 3, 4, 5]));
 console.log(sum([2, 7, 9]));
 
 // Write a Javascript program to compute the product of an array of integers
-// Test case 1
-// Input: [1, 2, 3, 4, 5]
-// Output: 120
-// Test case 2
-// Input: [2, 3]
-// Output: 6
 
 const productOf = arr => {
   let total = 1;
@@ -69,17 +63,24 @@ console.log(productOf([1, 2, 3, 4, 5])); // 120
 console.log(productOf([2, 3])); // 6
 
 // Write a JavaScript program to remove duplicate items from an array.
-// Test case 1
-// Input: [1, 1, 2, 3, 7, 7, 0]
-// Output: [1, 2, 3, 7, 0]
-// Test case 2
-// Input: [“Peter”, “James”, “Bob”, “Peter”]
-// Output: [“Peter”, “James”, “Bob”]
+
+const removeDuplicate = arr => {
+  let result = [];
+  for (i = 0; i < arr.length; i++) {
+    if (result.indexOf(arr[i]) === -1) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+};
+
+console.log(removeDuplicate([1, 1, 2, 3, 7, 7, 0])); //  [1, 2, 3, 7, 0]
+console.log(removeDuplicate(["Peter", "James", "Bob", "Peter"])); // [“Peter”, “James”, “Bob”]
 
 // Find the leap years in a given range of years.
 // Test case 1
 // Input: 2000, 2018
-// Output: [2000, 2004, 2008, 2012, 2016]
+// Output:
 // Test case 2
 // Input: 2013, 2015
 // Output: []
@@ -94,18 +95,10 @@ const toLeapYear = (min, max) => {
   return result;
 };
 
-console.log(toLeapYear(2000, 2018));
+console.log(toLeapYear(2000, 2018)); // [2000, 2004, 2008, 2012, 2016]
+console.log(toLeapYear(2013, 2015)); // []
 
 // Write a JavaScript program to calculate the n - th fibonacci number: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
-// Test case 1
-// Input: 0
-// Output: 1
-// Test case 2
-// Input: 4
-// Output: 5
-// Test case 3
-// Input: 3
-// Output: 3
 
 const toFibonacci = n => {
   const fib = [1, 1];
@@ -115,6 +108,6 @@ const toFibonacci = n => {
   return fib[n];
 };
 
-
-
-
+console.log(toFibonacci(0)); // 1
+console.log(toFibonacci(4)); // 5
+console.log(toFibonacci(3)); // 3
