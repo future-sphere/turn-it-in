@@ -79,7 +79,7 @@ nav p {
   width: 250px;
   height: 23px;
   font-size: 14px;
-  padding: 9px 8px 8px 50px;
+  padding: 8px 8px 8px 50px;
   display: inline-block;
   text-align: start;
   border: 1px solid #ddd;
@@ -217,7 +217,7 @@ footer a {
 }
 
 .help-footer-about a {
-  margin: 0px 2px;
+  /* letter-spacing: 2px; */
 }
 
 .help-footer-license span {
