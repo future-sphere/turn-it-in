@@ -78,12 +78,6 @@ console.log(removeDuplicate([1, 1, 2, 3, 7, 7, 0])); //  [1, 2, 3, 7, 0]
 console.log(removeDuplicate(["Peter", "James", "Bob", "Peter"])); // [“Peter”, “James”, “Bob”]
 
 // Find the leap years in a given range of years.
-// Test case 1
-// Input: 2000, 2018
-// Output:
-// Test case 2
-// Input: 2013, 2015
-// Output: []
 
 const toLeapYear = (min, max) => {
   const result = [];
