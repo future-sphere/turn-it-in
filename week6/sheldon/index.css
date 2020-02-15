@@ -1,0 +1,426 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.page-container {
+  width: 100%;
+  background-image: url(oval.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 13px 0px;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.square {
+  height: 10px;
+  width: 10px;
+  background-color: #ff4f4f;
+  margin-left: 5px;
+}
+
+.guide {
+  width: 100%;
+}
+
+.video {
+  background-image: url(rectangle.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 287px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.first-layer {
+  width: 88px;
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-layer {
+  width: 73px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-layer {
+  width: 58px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-button i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.guide-content {
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.guide-title {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.guide-text {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.guide-content button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 40px;
+  background-color: #ff4f4f;
+  border: none;
+  border-radius: 4px;
+}
+
+.services {
+  text-align: center;
+  padding: 98px 98px 30px 98px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.service-icon {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: red solid 2px;
+}
+
+.icon {
+  fill: #ff4f4f;
+}
+.service-icon:hover {
+  background-color: #ff4f4f;
+  fill: #fff;
+}
+
+.service-title {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.service-content {
+  font-size: 12px;
+  color: #5c5040;
+}
+
+.intro {
+  text-align: center;
+  padding: 0px 25px;
+}
+
+.intro-head {
+  margin-bottom: 60px;
+}
+
+.intro-block {
+  margin-bottom: 60px;
+}
+
+.recent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recent-head {
+  margin-bottom: 30px;
+}
+
+.recent-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 348px;
+}
+
+.recent-block img {
+  display: block;
+  width: 100%;
+}
+
+.recent-block-content {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+hr {
+  border: 0.5px solid rgba(188, 208, 229, 0.496913);
+}
+
+footer {
+  margin: 60px 25px;
+  text-align: center;
+}
+
+footer .nav-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: #544837;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.build {
+  margin-top: 13px;
+  margin-bottom: 29px;
+  text-align: center;
+  color: #544837;
+}
+
+.build span {
+  color: #ff4f4f;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1400px) {
+  .page-container {
+    width: 100%;
+    background-image: url(Oval2.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  .nav {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-content {
+    max-width: 1150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    display: flex;
+  }
+
+  .nav-list ul li {
+    list-style: none;
+    margin-left: 30px;
+  }
+
+  .nav-list ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .signin {
+    margin-left: 30px;
+    padding: 11px 25px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #ff4f4f;
+    border-radius: 4px;
+    height: 46px;
+  }
+
+  .signup {
+    margin-left: 14px;
+    padding: 11px 25px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 46px;
+  }
+
+  .guide {
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 1150px;
+  }
+
+  .guide-content {
+    width: 518px;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .guide-title {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .video {
+    height: 473px;
+    width: 579px;
+    border-radius: 4px;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .service {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .service-content {
+    font-size: 20px;
+  }
+
+  .intro {
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .intro-block-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-block {
+    max-width: 500px;
+    display: flex;
+  }
+
+  .intro-block h2 {
+    margin-top: 0px;
+  }
+
+  .block-content {
+    text-align: left;
+  }
+
+  .recent {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+  }
+  .recent-block-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+  }
+
+  .recent-img {
+    margin-bottom: 65px;
+  }
+
+  hr {
+    margin: auto;
+    width: 100%;
+    max-width: 1109px;
+  }
+
+  footer {
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+  }
+
+  .footer-title {
+    text-align: left;
+    max-width: 380px;
+  }
+
+  .mt-60 {
+    margin-top: 0px;
+  }
+
+  footer .footer-title .nav-logo {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .build {
+    margin-top: 13px;
+    margin-bottom: 29px;
+    text-align: center;
+  }
+}
