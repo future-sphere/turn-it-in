@@ -344,6 +344,17 @@ body {
     display: none;
   }
 
+  .wrapper__blue {
+    min-height: 354px;
+  }
+  .mobil__pink {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .wrapper__white {
+    top: 354px;
+  }
   .blue__time {
     position: absolute;
     left: 15%;
