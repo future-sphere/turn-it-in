@@ -5,7 +5,7 @@
 // const result = isString(data);
 // console.log(result);
 
-//1.b
+// 1;
 
 // const isString = data => typeof data === "string";
 // let data = 35;
@@ -154,9 +154,12 @@
 // console.log(result);
 
 //8
-
-const data = 1234567891;
-const formatPhoneNumber = (data, x) => {
-  if (str.indexOf("9")) {
-  }
+let data = "636-212-22";
+const formatPhoneNumber = data => {
+  let arr = data.split("");
+  return arr.map(i => {
+    if (typeof arr[i] === "number") return arr[i];
+  });
 };
+let result = formatPhoneNumber(data);
+console.log(result);
