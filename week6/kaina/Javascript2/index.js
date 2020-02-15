@@ -83,7 +83,20 @@
 // Input: [“Peter”, “James”, “Bob”, “Peter”]
 // Output: [“Peter”, “James”, “Bob”]
 
-const findDuplicate = dup => {};
+// const obj = {};
+// const arr = [];
+// const findDuplicate = dup => {
+//   for (i = 0; i < dup.length; i++) {
+//     if (!obj[dup[i]]) {
+//       arr.push(dup[i]);
+//       obj[dup[i]] = "ok";
+//     }
+//   }
+//   return arr;
+// };
+
+// // console.log(findDuplicate(["Peter", "James", "Bob", "Peter"]));
+// console.log(findDuplicate([1, 1, 2, 3, 7, 7, 0]));
 
 // Find the leap years in a given range of years.
 // Test case 1
@@ -116,14 +129,31 @@ const findDuplicate = dup => {};
 // Input: 3
 // Output: 3
 
-const fibonacci = n => {
-  const fibonacciArr = [1, 1];
-  for (let i = 2; i <= n; i++) {
-    fibonacciArr[i] = fibonacciArr[i - 1] + fibonacciArr[i - 2];
+// const fibonacci = n => {
+//   const fibonacciArr = [1, 1];
+//   for (let i = 2; i <= n; i++) {
+//     fibonacciArr[i] = fibonacciArr[i - 1] + fibonacciArr[i - 2];
+//   }
+//   return fibonacciArr[n];
+// };
+
+// console.log(fibonacci(0));
+// console.log(fibonacci(4));
+// console.log(fibonacci(3));
+
+const findDup = dup => {
+  let obj = {};
+  let arr = [];
+  let nonarr = [];
+  for (i = 0; i < dup.length; i++) {
+    if (obj[dup[i]]) {
+      nonarr.push(dup[i]);
+    } else {
+      arr.push(dup[i]);
+      obj[dup[i]] = true;
+    }
   }
-  return fibonacciArr[n];
+  return arr;
 };
 
-console.log(fibonacci(0));
-console.log(fibonacci(4));
-console.log(fibonacci(3));
+console.log(findDup([1, 1, 2, 3, 7, 7, 0]));
