@@ -78,5 +78,4 @@ const fibonacci = input => {
     return fibonacciArr[input]
 };
 
-
 // console.log(fibonacci(4))
