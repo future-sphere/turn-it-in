@@ -96,8 +96,8 @@ console.log(toLeapYear(2013, 2015)); // []
 
 const toFibonacci = n => {
   const fib = [1, 1];
-  for (let i = 2; i < n - 1; i++) {
-    fib.push(fib[i - 2] + fib[i - 1]);
+  for (let i = 2; i < n; i++) {
+    fib[i] = fib[i - 2] + fib[i - 1];
   }
   return fib[n];
 };
