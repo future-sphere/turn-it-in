@@ -86,13 +86,13 @@
 const obj = {};
 const arr = [];
 const findDuplicate = dup => {
-  for (i = 0; i < dup.length; i++) {
-    if (!obj[dup[i]]) {
-      arr.push(dup[i]);
-      obj[dup[i]] = "ok";
-    }
-  }
-  return arr;
+	for (i = 0; i < dup.length; i++) {
+		if (!obj[dup[i]]) {
+			arr.push(dup[i]);
+			obj[dup[i]] = 'ok';
+		}
+	}
+	return arr;
 };
 
 // // console.log(findDuplicate(["Peter", "James", "Bob", "Peter"]));
@@ -142,18 +142,18 @@ const findDuplicate = dup => {
 // console.log(fibonacci(3));
 
 const findDup = dup => {
-  let obj = {};
-  let arr = [];
-  let nonarr = [];
-  for (i = 0; i < dup.length; i++) {
-    if (obj[dup[i]]) {
-      nonarr.push(dup[i]);
-    } else {
-      arr.push(dup[i]);
-      obj[dup[i]] = true;
-    }
-  }
-  return arr;
+	let obj = {};
+	let arr = [];
+	let nonarr = [];
+	for (i = 0; i < dup.length; i++) {
+		if (obj[dup[i]]) {
+			nonarr.push(dup[i]);
+		} else {
+			arr.push(dup[i]);
+			obj[dup[i]] = true;
+		}
+	}
+	return arr;
 };
 
 console.log(findDup([1, 1, 2, 3, 7, 7, 0]));
