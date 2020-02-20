@@ -1,0 +1,16 @@
+@import '../../style/colors.scss';
+
+.banner-container {
+	background-image: url(../../assets/images/hero-bg.png);
+	.title-box {
+		h3 {
+			font-size: 27px;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+		span {
+			text-transform: uppercase;
+			font-size: 27px;
+		}
+	}
+}

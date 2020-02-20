@@ -1,0 +1,82 @@
+@import '../../style/colors.scss';
+
+nav {
+	width: 100%;
+	padding: 16px 60px;
+	background-color: $black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #fff;
+
+	.nav-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-left-container {
+		display: flex;
+		align-items: center;
+		.logo {
+			display: flex;
+			align-items: center;
+
+			svg {
+				width: 125px;
+				height: 35px;
+			}
+		}
+		ul {
+			li {
+				list-style: none;
+				margin-right: 16px;
+				font-size: 16px;
+				display: inline;
+
+				&:hover {
+					color: $red;
+				}
+
+				&.active {
+					color: $red;
+				}
+			}
+		}
+	}
+	.nav-right-container {
+		display: flex;
+		align-items: center;
+		.search-bar {
+			margin-right: 24px;
+		}
+		.user {
+			margin-right: 24px;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		.notification {
+			margin-right: 24px;
+			i {
+				font-size: 22px;
+			}
+			span {
+				background-color: $red;
+				border-radius: 50%;
+				position: relative;
+				right: 11px;
+				bottom: 10px;
+				padding: 1px 6px;
+				align-items: center;
+			}
+		}
+		.menu-bar {
+			display: flex;
+			align-items: center;
+
+			svg:first-of-type {
+				margin-right: 10px;
+			}
+		}
+	}
+}
