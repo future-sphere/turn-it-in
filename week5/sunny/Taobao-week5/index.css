@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.login-header {
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.login-header a {
+  max-width: 990px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: #3e3e3e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-header img {
+  width: 150px;
+  height: 62px;
+  margin: 25px 20px 25px 0;
+}
+
+.login-header span {
+  font-size: 25px;
+  font-family: "Microsoft YaHei";
+}
+
+.login-box {
+  width: inherit;
+  max-width: 990px;
+  margin: auto;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-element-container {
+  border: 1px solid #e8e8e8;
+  border-top: 2px solid #f40;
+  background: #fafafa;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  margin: 45px 0;
+  box-shadow: 0 2px 6px #acacac;
+}
+
+.login-box-header {
+  background-color: #f7f7f8;
+  text-align: center;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.login-box-header p {
+  font-size: 16px;
+  line-height: 41px;
+  margin: 0px;
+}
+
+.login-box-info {
+  background-color: #f0f0f0;
+  display: block;
+  color: #6c6c6c;
+  padding-bottom: 50px;
+}
+
+.login-box-info img {
+  width: 140px;
+  height: 42px;
+  margin: 17.5px 105px;
+}
+
+.login-box-info form {
+  background: white;
+  border-bottom: 1px solid #dddddd;
+  padding: 13px 9.333px;
+  font-size: 15px;
+  display: flex;
+}
+
+.label {
+  width: 70px;
+  height: 21px;
+}
+
+.login-box-info input {
+  border: transparent;
+  font-size: 15px;
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(209, 209, 209);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16.8px;
+}
+
+button {
+  background: #f40;
+  border: 1px solid #f40;
+  border-radius: 5px;
+  color: #ffa286;
+  font-size: 15px;
+  padding: 12px 150px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin: 14px 9.333px 0 9.333px;
+}
+
+.link a {
+  color: #6c6c6c;
+  font-size: 15px;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 2px solid #f40;
+}
+
+.footer-card {
+  background: #fafbfc;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-card-container {
+  max-width: 990px;
+  margin: auto;
+  display: flex;
+}
+
+.card-container {
+  width: 289px;
+  padding: 15px 40px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.border {
+  border-right: 1px solid #e5e5e5;
+}
+
+.card-container i {
+  margin-right: 10px;
+}
+
+.footer-card-text h4 {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.footer-card-text p {
+  font-size: 12px;
+  color: #888888;
+}
+
+.footer-info-container {
+  width: inherit;
+  max-width: 990px;
+  margin: auto;
+  padding: 18px 0 9px 0;
+  font-size: 12px;
+  font-weight: 400px;
+  font-family: Tahoma, Arial, "Hiragino Sans GB";
+}
+
+.footer-info-container a {
+  color: #6c6c6c;
+}
+
+.footer-info-container a:hover {
+  color: #f40;
+}
+
+.brands {
+  display: flex;
+}
+
+.brands a {
+  border-left: 1px solid #485065;
+  padding: 0 9px 1px 9px;
+  margin-bottom: 8px;
+}
+
+.brands a:first-of-type {
+  padding-left: 4px;
+  border-left: none;
+}
+
+.brand-information {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.brand-information a {
+  margin: 0 4px;
+}
+
+.brand-information span {
+  color: rgb(156, 156, 156);
+  margin-left: 30px;
+}
+
+.license-container {
+  display: flex;
+}
+
+.license {
+  color: #9c9c9c;
+  margin: 0 4px;
+}
+
+b {
+  color: #485065;
+  margin: 0 3px;
+}

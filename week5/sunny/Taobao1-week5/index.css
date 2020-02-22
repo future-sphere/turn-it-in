@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.login-header {
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.login-header a {
+  max-width: 990px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: #3e3e3e;
+}
+
+.login-header a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-header img {
+  width: 150px;
+  height: 62px;
+  margin: 25px 20px 25px 0;
+}
+
+.login-header span {
+  font-size: 25px;
+  font-family: "Microsoft YaHei";
+}
+
+.login-box {
+  width: inherit;
+  max-width: 990px;
+  margin: auto;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-element-container {
+  border: 1px solid #e8e8e8;
+  border-top: 2px solid #f40;
+  background: #fafafa;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  margin: 45px 0;
+  box-shadow: 0 2px 6px #acacac;
+}
+
+.login-info-container {
+  padding: 25px 25px 45px 25px;
+  background-color: white;
+  position: relative;
+}
+
+.login-info-container img {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+.login-info-container p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #df9c1f;
+  line-height: 16px;
+  background: rgb(254, 252, 238);
+  padding: 5px 20px 5px 15px;
+  border: 1px solid rgb(247, 217, 149);
+  position: absolute;
+  top: 8px;
+  right: 57px;
+}
+
+.login-form h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 8px;
+  margin-top: 9px;
+  color: rgb(60, 60, 60);
+}
+
+.form-type {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  color: rgb(108, 108, 108);
+  border: 1px solid rgb(221, 221, 221);
+  display: flex;
+}
+
+.form-type label {
+  width: 42px;
+  font-size: 22px;
+  color: #ffffff;
+  background: rgb(221, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-type input {
+  width: 255px;
+  outline: none;
+  border: transparent;
+  padding-left: 10px;
+}
+
+::placeholder {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button button {
+  background: #f40;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  padding: 0 135px;
+  cursor: pointer;
+}
+
+.login-facebook {
+  margin-top: 24px;
+}
+
+.login-facebook button {
+  background: linear-gradient(#4c69ba, #3b55a0);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 11px;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-facebook i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.login-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-links a {
+  color: rgb(108, 108, 108);
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.login-links a:hover {
+  color: #f40;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 2px solid #f40;
+}
+
+.footer-card {
+  background: #fafbfc;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-card-container {
+  max-width: 990px;
+  margin: auto;
+  display: flex;
+}
+
+.card-container {
+  width: 289px;
+  padding: 15px 40px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.border {
+  border-right: 1px solid #e5e5e5;
+}
+
+.card-container i {
+  margin-right: 10px;
+}
+
+.footer-card-text h4 {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.footer-card-text p {
+  font-size: 12px;
+  color: #888888;
+}
+
+.footer-info-container {
+  width: inherit;
+  max-width: 990px;
+  margin: auto;
+  padding: 18px 0 9px 0;
+  font-size: 12px;
+  font-weight: 400px;
+  font-family: Tahoma, Arial, "Hiragino Sans GB";
+}
+
+.footer-info-container a {
+  color: #6c6c6c;
+}
+
+.footer-info-container a:hover {
+  color: #f40;
+  text-decoration: none;
+}
+
+.brands {
+  display: flex;
+}
+
+.brands a {
+  border-left: 1px solid #485065;
+  padding: 0 9px 1px 9px;
+  margin-bottom: 8px;
+}
+
+.brands a:first-of-type {
+  padding-left: 4px;
+  border-left: none;
+}
+
+.brand-information {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.brand-information a {
+  margin: 0 4px;
+}
+
+.brand-information span {
+  color: rgb(156, 156, 156);
+  margin-left: 30px;
+}
+
+.license-container {
+  display: flex;
+}
+
+.license {
+  color: #9c9c9c;
+  margin: 0 4px;
+}
+
+b {
+  color: #485065;
+  margin: 0 3px;
+}
