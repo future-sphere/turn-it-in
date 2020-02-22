@@ -1,17 +1,13 @@
-<<<<<<< HEAD
-=======
 //1
->>>>>>> master
+
 // isArray = input => {
 //   return Array.isArray(input);
 // };
 // console.log(isArray([1, 2, 3, 54]));
 // console.log(isArray(35));
 
-<<<<<<< HEAD
-=======
 //2
->>>>>>> master
+
 // joinArray = input => {
 //   return input
 //     .join()
@@ -20,28 +16,17 @@
 // };
 // // console.log(joinArray(["apple", "orange", "grape"]));
 
-<<<<<<< HEAD
 // const arr = [1, 2, 3, 4, 5];
 // findIndex = input => {
 //   for (i = 0; i < arr.length; i++) {
 //     if (arr[i].toString() === input.toString()) {
-=======
-//3
-// const arr = [1, 2, 3, 4, 5];
-// findIndex = input => {
-//   for (i = 0; i < arr.length; i++) {
-//     if (Number(arr[i]) === Number(input)) {
->>>>>>> master
+
 //       return "The index of " + input + " is " + i;
 //     }
 //   }
 // };
 // console.log(findIndex(3));
 
-<<<<<<< HEAD
-=======
-//4
->>>>>>> master
 // let sum = 0;
 // let arr;
 // const sumOf = arr => {
@@ -51,16 +36,12 @@
 //   return sum;
 // };
 
-<<<<<<< HEAD
 // console.log(sumOf([1, 2, 3, 4, 5]));
 // console.log(sumOf([2,7,10]))
 
-=======
-//console.log(sumOf([1, 2, 3, 4, 5]));
+// console.log(sumOf([1, 2, 3, 4, 5]));
 // console.log(sumOf([2,7,10]))
 
-//6
->>>>>>> master
 // let sum = 1;
 // let arr;
 // const sumOf = arr => {
@@ -73,10 +54,6 @@
 // // console.log(sumOf([1, 2, 3, 4, 5]));
 // console.log(sumOf([2, 3]));
 
-<<<<<<< HEAD
-=======
-//7
->>>>>>> master
 // let arr = ["Peter", "James", "Bob", "Peter"];
 //let arr=[1,1,2,3,7,7,0]
 // let newArr = [];
@@ -88,7 +65,6 @@
 
 // console.log(newArr);
 
-<<<<<<< HEAD
 // let arr = [];
 // const findLeapYear = arr => {
 //   for (i = 2000; i <= 2018; i++) {
@@ -101,19 +77,6 @@
 //   return arr;
 // };
 // console.log(findLeapYear(arr));
-=======
-//8
-let arr = [];
-const findLeapYear = arr => {
-  for (i = 2000; i <= 2018; i++) {
-    if (4 % i === 0) {
-      arr.push(i);
-    }
-  }
-  return arr;
-};
-console.log(findLeapYear(arr));
->>>>>>> master
 
 // const findLeapYear = (startYear, endYear) => {
 //   let years = [];
@@ -138,24 +101,12 @@ console.log(findLeapYear(arr));
 
 // console.log(findLeapYear(2000, 2018));
 
-<<<<<<< HEAD
 let arr = [0, 1];
 const calculateFibonacci = n => {
-  for (i = 2; i <= n; i++) {
-    arr.push(arr[i - 2] + arr[i - 1]);
-  }
-  return arr;
+	for (i = 2; i <= n; i++) {
+		arr.push(arr[i - 2] + arr[i - 1]);
+	}
+	return arr;
 };
 
 console.log(calculateFibonacci(9));
-=======
-// let arr = [0, 1];
-// const calculateFibonacci = n => {
-//   for (i = 2; i <= n; i++) {
-//     arr.push(arr[i - 2] + arr[i - 1]);
-//   }
-//   return arr;
-// };
-
-// console.log(calculateFibonacci(9));
->>>>>>> master
