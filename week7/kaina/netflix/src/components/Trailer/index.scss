@@ -1,0 +1,78 @@
+@import '../../style/colors.scss';
+
+.trailer-container {
+	margin: 0px;
+	padding: 16px 0px 0px 60px;
+	color: $white;
+	background-image: url(../../assets/images/bg-poland.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	.content {
+		padding: 67px 60px;
+		position: relative;
+		.name svg {
+			width: 465px;
+			height: 132px;
+		}
+		h4 {
+			font-size: 26px;
+			margin: 0px;
+			margin-bottom: 7px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 28px;
+			display: inline-block;
+			width: 580px;
+			margin: 0px;
+		}
+	}
+	.trailer-list {
+		display: flex;
+
+		overflow-x: scroll;
+		.list {
+			img {
+				width: 420px;
+				padding-right: 15px;
+			}
+
+			svg {
+				position: relative;
+				bottom: 171px;
+				left: calc(50% - 97px / 2);
+			}
+			.description {
+				position: relative;
+				bottom: 170px;
+				left: 20px;
+				h4 {
+					font-size: 22px;
+					padding-bottom: 7px;
+					margin: 0px;
+				}
+				p {
+					font-size: 16px;
+					padding-bottom: 47px;
+					margin: 0px;
+					color: rgba(255, 255, 255, 0.4);
+					font-weight: 700;
+				}
+				h3 {
+					font-size: 20px;
+					margin: 0px;
+					color: rgba(255, 255, 255, 0.4);
+					position: relative;
+					left: -20px;
+
+					&.active {
+						color: $white;
+						padding-bottom: 15px;
+						border-bottom: 3px solid #e50914;
+					}
+				}
+			}
+		}
+	}
+}

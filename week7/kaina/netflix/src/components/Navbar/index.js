@@ -25,7 +25,7 @@ export default class Navbar extends React.Component {
 						<div className='search-bar'>
 							<i class='fas fa-search'></i>
 						</div>
-						<div className='user'>Kaina Zhang</div>
+						<div className='user'>Kids</div>
 						<div className='notification'>
 							<i class='fas fa-bell'></i>
 							<span>2</span>
