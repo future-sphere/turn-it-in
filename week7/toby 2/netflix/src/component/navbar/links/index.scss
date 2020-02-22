@@ -1,0 +1,21 @@
+ul {
+	margin-left: 45px;
+	padding: 0;
+	li {
+		list-style: none;
+		display: inline;
+		margin-right: 16px;
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-size: 16px;
+			opacity: 90%;
+			&.active {
+				color: #e50914;
+			}
+			&:hover {
+				color: #e50914;
+			}
+		}
+	}
+}
