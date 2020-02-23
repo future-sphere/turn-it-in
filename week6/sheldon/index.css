@@ -116,6 +116,18 @@ nav {
   background-color: #ff4f4f;
   border: none;
   border-radius: 4px;
+<<<<<<< HEAD
+=======
+
+  cursor: context-menu;
+}
+
+.guide-content button:hover {
+  color: #ff4f4f;
+  background-color: green;
+=======
+
+>>>>>>> master
 }
 
 .services {
@@ -139,13 +151,33 @@ nav {
   border-radius: 10px;
   margin-bottom: 20px;
   border: red solid 2px;
+<<<<<<< HEAD
+=======
+
+  cursor: context-menu;
+=======
+
+>>>>>>> master
 }
 
 .icon {
   fill: #ff4f4f;
 }
+<<<<<<< HEAD
 .service-icon:hover {
   background-color: #ff4f4f;
+=======
+
+.service-icon:hover {
+  background-color: #ff4f4f;
+}
+
+.service-icon:hover > svg .icon {
+=======
+.service-icon:hover {
+  background-color: #ff4f4f;
+
+>>>>>>> master
   fill: #fff;
 }
 
@@ -348,7 +380,15 @@ footer a {
   }
 
   .service-content {
+<<<<<<< HEAD
     font-size: 20px;
+=======
+
+    font-size: 16px;
+=======
+    font-size: 20px;
+
+>>>>>>> master
   }
 
   .intro {
@@ -372,6 +412,13 @@ footer a {
   }
 
   .block-content {
+<<<<<<< HEAD
+=======
+
+    margin-left: 24px;
+=======
+
+>>>>>>> master
     text-align: left;
   }
 
