@@ -10,6 +10,9 @@
 	p {
 		img {
 			display: none;
+			position: relative;
+			top: 3px;
+			margin-left: 6px;
 		}
 	}
 	&:hover {

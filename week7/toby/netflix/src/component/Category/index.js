@@ -7,7 +7,7 @@ class Category extends Component {
 		return (
 			<div className='catigories'>
 				<p>
-					Catigories <img src={Arrowright} alt='arrow' />
+					Categories <img src={Arrowright} alt='arrow' />
 				</p>
 				<div className='catigories__list'>
 					<span className='comedy'>
