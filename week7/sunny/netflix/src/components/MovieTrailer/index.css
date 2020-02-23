@@ -1,0 +1,124 @@
+.movie-trailer {
+	position: relative;
+}
+
+.trailer-background {
+	background-image: url(../../assets/images/Object.jpg);
+	background-size: cover;
+	height: 462px;
+}
+
+.background-layer {
+	background: linear-gradient(
+		270deg,
+		rgba(255, 255, 255, 0.0001) 0%,
+		rgba(88, 88, 88, 0.275192) 44.15%,
+		rgba(9, 9, 9, 0.745697) 65.32%,
+		#000000 78.86%
+	);
+}
+
+.trailer-info {
+	padding: 67px 0 114px 60px;
+	color: #ffffff;
+	width: 45%;
+}
+
+.trailer-info img {
+	width: 464px;
+	margin-bottom: 28px;
+}
+
+.trailer-info h5 {
+	font-size: 26px;
+	margin: 0 0 8px 0;
+}
+
+.trailer-info p {
+	font-size: 20x;
+	line-height: 28px;
+	margin: 0;
+}
+
+.trailer-list {
+	position: relative;
+	top: -58px;
+	width: 100%;
+	padding-left: 60px;
+	overflow: hidden;
+}
+
+.trailer-loop {
+	display: flex;
+	overflow-x: scroll;
+}
+
+.video-container {
+	margin-right: 15px;
+}
+
+.video-container:first-of-type {
+	border-bottom: 4px solid #e50914;
+}
+
+.video-container p {
+	font-size: 20px;
+	color: rgba(225, 225, 225, 0.4);
+}
+
+.video-container p:first-of-type {
+	color: #ffffff;
+}
+
+.video {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	width: 420px;
+	height: 255px;
+	background-size: cover;
+}
+
+.video:hover {
+	width: 494px;
+	height: 300px;
+	transition-duration: 1s;
+}
+
+.ida {
+	background-image: url(../../assets/images/bg-ida.png);
+}
+
+.lls {
+	background-image: url(../../assets/images/bg-kanal.png);
+}
+
+.cold-war {
+	background-image: url(../../assets/images/bg-coldwar.png);
+}
+
+.circle {
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	background-color: rgba(20, 20, 20, 0.32);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: calc(50% - 48px);
+	left: calc(50% - 48px);
+}
+
+.video h5 {
+	margin: 0 0 8px 18px;
+	color: #ffffff;
+	font-size: 22px;
+}
+
+.video p {
+	margin: 0 0 8px 18px;
+	color: rgba(225, 225, 225, 0.4);
+	font-size: 16px;
+}

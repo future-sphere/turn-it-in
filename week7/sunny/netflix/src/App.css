@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue';
+	background-color: #1b1b1b;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+h4 {
+	padding: 0;
+	margin: 0;
+}
+
+h5 {
+	padding: 0;
+	margin: 0;
+}
+
+h6 {
+	padding: 0;
+	margin: 0;
+}
