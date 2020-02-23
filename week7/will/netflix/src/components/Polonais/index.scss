@@ -1,0 +1,90 @@
+.container {
+  background-image: url(../../assets/img/polonais-bg.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+
+  .polonais-block {
+    margin-left: 60px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #fff;
+
+    .polonais-title {
+      svg {
+        width: 460px;
+        height: 130px;
+        margin-top: 60px;
+      }
+    }
+
+    h5 {
+      font-size: 26px;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .movielist-container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    padding-bottom: 80px;
+    background-color: #141414;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .movielist-block {
+      position: relative;
+      color: #fff;
+      margin-right: 15px;
+      z-index: 0;
+
+      svg {
+        position: absolute;
+        top: calc(50% - 97px / 2);
+        left: calc(50% - 97px / 2);
+      }
+
+      .movielist-text {
+        text-align: left;
+        position: absolute;
+        top: 180px;
+        left: 18px;
+
+        h5 {
+          font-size: 22px;
+          margin: 0px;
+        }
+
+        p {
+          font-size: 16px;
+          margin: 10px 0;
+        }
+
+        h4 {
+          margin-top: 50px;
+          padding-bottom: 15px;
+        }
+
+        h4:hover {
+          border-bottom: 3px solid #e50914;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .movielist-block:first-of-type {
+      margin-left: 60px;
+    }
+  }
+}
