@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './index.scss';
-import NavbarLogo from './logo';
-import Links from './links';
-import Searchbar from './searchbar';
-import AccountInfo from './accountInfo';
+import NavbarLogo from './Logo';
+import Links from './Links';
+import Searchbar from './Searchbar';
+import AccountInfo from './AccountInfo';
 import { ReactComponent as WanderingEarth } from '../../assets/images/crown.svg';
 
 class Navbar extends Component {

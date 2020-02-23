@@ -13,6 +13,7 @@ class Header extends Component {
 					src={Herobg}
 					alt='hero background'
 				/>
+
 				<div className='header__text'>
 					<h3>
 						Netflix <span>Original</span>

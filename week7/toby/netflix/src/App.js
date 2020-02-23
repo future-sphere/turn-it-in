@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Navbar from './component/navbar';
-import PopularList from './component/popularlist';
-import TrendingList from './component/trendinglist';
-import Header from './component/header';
-import Subheader from './component/subheader';
-import Catigory from './component/catigory';
-import NetflixOrigin from './component/NetflixOrigin';
-import Footer from './component/footer';
+import Navbar from './Component/Navbar';
+import PopularList from './Component/PopularList';
+import TrendingList from './Component/TrendingList';
+import Header from './Component/Header';
+import Subheader from './Component/Subheader';
+import Category from './Component/Category';
+import NetflixOrigin from './Component/NetflixOrigin';
+import Footer from './Component/Footer';
 
 function App() {
 	return (
@@ -18,7 +18,7 @@ function App() {
 			<TrendingList />
 			<Subheader />
 			<NetflixOrigin />
-			<Catigory />
+			<Category />
 			<Footer />
 		</div>
 	);

@@ -16,12 +16,5 @@
 	}
 	img {
 		height: 124px;
-
-		transition-duration: 0.5s;
-		&:hover {
-			height: 200px;
-			width: 204px;
-			object-fit: cover;
-		}
 	}
 }

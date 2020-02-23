@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './index.scss';
 import Arrowright from '../../assets/logos/arrowright.svg';
 import Arrowdown from '../../assets/logos/arrowdown2.svg';
-class Catigory extends Component {
+class Category extends Component {
 	render() {
 		return (
 			<div className='catigories'>
@@ -59,4 +59,4 @@ class Catigory extends Component {
 	}
 }
 
-export default Catigory;
+export default Category;
