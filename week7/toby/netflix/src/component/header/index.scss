@@ -1,0 +1,62 @@
+.header {
+	width: 100%;
+	background-color: #000;
+
+	.header__background {
+		width: 100%;
+		min-width: 1440px;
+	}
+	.header__text {
+		position: absolute;
+		top: 160px;
+		left: 60px;
+		color: #fff;
+		text-align: left;
+		h3 {
+			font-size: 27px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+			span {
+				font-weight: 400;
+			}
+		}
+		.header__narcoslogo {
+			width: 344px;
+		}
+		h4 {
+			font-size: 26px;
+			margin-top: 24px;
+			font-weight: 500;
+		}
+		p {
+			font-size: 20px;
+			width: 438px;
+			line-height: 28px;
+		}
+		.header__buttons {
+			display: flex;
+			justify-content: left;
+			button {
+				border-radius: 4px;
+				width: 155px;
+				height: 40px;
+				border: 0;
+				background-color: rgba($color: #000000, $alpha: 0.32);
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 15px;
+				font-size: 16px;
+				font-weight: 500;
+				img {
+					margin-right: 10px;
+					color: #fff;
+					width: 16px;
+					background-color: rgba($color: #000000, $alpha: 0);
+				}
+			}
+		}
+	}
+}

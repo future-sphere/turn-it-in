@@ -1,0 +1,36 @@
+.netflix__origin {
+	color: #fff;
+	position: relative;
+	top: 383px;
+	text-align: left;
+	margin-left: 60px;
+	margin-bottom: 55px;
+	p {
+		font-size: 20px;
+		font-weight: bold;
+		img {
+			display: none;
+			margin-left: 6px;
+		}
+	}
+	.origin__lists {
+		overflow: auto;
+		white-space: nowrap;
+		img {
+			width: 217px;
+			height: 434px;
+			margin-left: 5px;
+			transition-duration: 0.5s;
+			&:hover {
+				width: 280px;
+			}
+		}
+	}
+	&:hover {
+		p {
+			img {
+				display: inline;
+			}
+		}
+	}
+}
