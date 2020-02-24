@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QQ空间-分享生活，留住感动</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="login-container">
+        <img
+          src="https://qzonestyle.gtimg.cn/qzone_v6/proj_qzonelogin/img/qzone-login-logo-dark.32@2x.png"
+          alt="qq zone logo"
+        />
+        <div class="login-box quick-login" id="quick-login">
+          <div class="login-header">
+            <h3>快速安全登录</h3>
+            <p>
+              请使用<a href="#" onclick="handleSwitchBack()">QQ手机版</a
+              >扫描二维码，
+            </p>
+            <p>安全登录，防止盗号</p>
+          </div>
+          <div class="login-code-container">
+            <div class="login-qr-code">
+              <img src="QRcode.jpg" alt="QRcode" />
+            </div>
+          </div>
+          <div class="login-footer">
+            <a href="#" onclick="handleSwitchBack()">账号密码登录</a>
+            <span>|</span>
+            <a href="">注册新账号</a>
+            <span>|</span>
+            <a href="">意见反馈</a>
+          </div>
+        </div>
+        <div class="login-box account-login" id="login-box">
+          <div class="login-header">
+            <h3>账号密码登录</h3>
+            <p>
+              推荐使用<a href="#" onclick="handleClick()">快速安全登录</a
+              >，防止盗号。
+            </p>
+          </div>
+          <form>
+            <input
+              type="email,tel,qq id"
+              placeholder="支持QQ号/邮箱/手机号登录"
+            />
+            <input type="password" placeholder="密码" />
+            <button><a href="#">登 录</a></button>
+          </form>
+          <div class="login-footer">
+            <a
+              href="https://aq.qq.com/v2/uv_aq/html/reset_pwd/pc_reset_pwd_input_account.html?v=3.0&old_ver_account="
+              target="_blank"
+              >忘了密码？</a
+            >
+            <span>|</span>
+            <a href="https://ssl.zc.qq.com/v3/index-en.html" target="_blank">注册新账号</a>
+            <span>|</span>
+            <a href="https://support.qq.com/products/14800" target="_blank">意见反馈</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-logo-container">
+          <a href="#" class="hvr-bob">
+            <i class="fab fa-apple"></i>
+            <p>iPhone</p>
+          </a>
+          <a href="#" class="hvr-bob">
+            <img src="Ipad.png" alt="iPad logo" />
+            <p>iPad</p>
+          </a>
+          <a href="#" class="hvr-bob">
+            <img src="android.png" alt="android logo" />
+            <p>Android</p>
+          </a>
+          <a href="#" class="hvr-bob">
+            <img src="windows.png" alt="windows logo" />
+            <p>Windows Phone</p>
+          </a>
+          <a href="#" class="hvr-bob">
+            <i class="fas fa-mobile-alt"></i>
+            <p>其他手机</p>
+          </a>
+        </div>
+        <div class="footer-info-container">
+          <p>
+            <a href="http://support.qq.com/discuss/46_1.shtml" target="_blank"
+              >反馈建议</a
+            >
+            <span>|</span>
+            <a href="https://qzone.qzone.qq.com/" target="_blank">官方空间</a>
+            <span>|</span>
+            <a href="https://act.qzone.qq.com/" target="_blank">空间活动</a>
+            <span>|</span>
+            <a href="https://my.qzone.qq.com/" target="_blank">空间应用</a>
+            <span>|</span>
+            <a href="https://abcmouse.qq.com/" target="_blank"
+              >ABCmouse腾讯版</a
+            >
+            <span>|</span>
+            <a href="https://user.qzone.qq.com/949589999/main" target="_blank"
+              >腾讯原创馆</a
+            >
+            <span>|</span>
+            <a href="http://connect.qq.com/" target="_blank">QQ互联</a>
+            <span>|</span>
+            <a href="#">QQ登录</a>
+            <span>|</span>
+            <a href="#">社交组织</a>
+            <span>|</span>
+            <a
+              href="https://wiki.open.qq.com/wiki/%E6%8A%95%E8%AF%89%E6%8C%87%E5%BC%95"
+              target="_blank"
+              >应用侵权投诉</a
+            >
+            <span>|</span>
+            <a
+              href="https://wiki.open.qq.com/wiki/Tencent_Open_Platform_Complaint_Guidelines"
+              target="_blank"
+              >Complaint Guidelines</a
+            >
+          </p>
+          <p>
+            Copyright @ 2005 - 2020 Tencent.
+            <a
+              target="_blank"
+              href="http://www.tencent.com/en-us/le/copyrightstatement.shtml"
+              >All Rights Reserved.</a
+            >
+          </p>
+          <p>
+            腾讯公司
+            <a
+              href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm"
+              target="_blank"
+              >版权所有</a
+            >
+            <a href="http://www.qq.com/culture.shtml" target="_blank"
+              >粤网文[2014]0633-233号</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+    <p class="background-description">背景来源<a href="">腾讯ISUX</a></p>
+    <script
+      src="https://kit.fontawesome.com/a62b29f649.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

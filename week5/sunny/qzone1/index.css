@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  background-image: url(beach.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  max-width: 880px;
+  margin: auto;
+  position: relative;
+}
+
+.login-container {
+  position: absolute;
+  top: 95px;
+  width: inherit;
+}
+
+.login-container img {
+  width: 251px;
+  height: 98px;
+}
+
+.login-box {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background: #ffffff;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+  font-family: Helvetica, Arial, 微软黑体, 华文黑体;
+}
+
+.login-header {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.login-header h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+
+.login-header p {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+}
+
+.login-header a {
+  color: #3481cf;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  width: 272px;
+  margin: 0 71px;
+}
+
+input {
+  width: inherit;
+  height: 42px;
+  margin-bottom: 13px;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(219, 219, 219);
+  outline-color: #80c8df;
+}
+
+::placeholder {
+  color: #a1a1a1;
+}
+
+button {
+  width: inherit;
+  height: 40px;
+  color: #000000;
+  background-color: rgb(134, 206, 47);
+  border: none;
+  font-size: 17px;
+}
+
+button a {
+  color: #ffffff;
+}
+
+button a:hover {
+  text-decoration: none;
+}
+
+.login-code-container {
+  width: inherit;
+  padding: 0 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-qr-code {
+  border: 1px solid #d3d3d3;
+  height: 130px;
+}
+
+.login-qr-code img {
+  width: 130px;
+  height: 130px;
+}
+
+.login-footer {
+  font-size: 12px;
+  margin: 30px 10px 8px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-footer a {
+  color: rgb(102, 102, 102);
+}
+
+.login-footer span {
+  color: rgb(191, 191, 191);
+  margin: 0 5px;
+}
+
+footer {
+  width: inherit;
+  position: absolute;
+  bottom: 50px;
+  font-family: "Microsoft Yahei";
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo-container a {
+  width: 60px;
+  margin: 0 5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-logo-container i {
+  font-size: 30px;
+}
+
+.footer-logo-container img {
+  width: 28px;
+}
+
+.footer-logo-container p {
+  font-size: 12px;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+.footer-info-container {
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-info-container a {
+  color: #ffffff;
+}
+
+.footer-info-container p {
+  margin: 0;
+  line-height: 22px;
+}
+
+.background-description {
+  position: absolute;
+  bottom: 42px;
+  right: 50px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.background-description a {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
