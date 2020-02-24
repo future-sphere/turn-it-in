@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './index.scss';
 import NavbarLogo from './Logo';
 import Links from './Links';
-import Searchbar from './Searchbar';
+import Searchbar from './SearchBar';
 import AccountInfo from './AccountInfo';
 import { ReactComponent as WanderingEarth } from '../../assets/images/crown.svg';
 
