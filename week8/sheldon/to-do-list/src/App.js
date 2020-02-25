@@ -17,11 +17,15 @@ class App extends Component {
 
 	handleSubmitChange = () => {
 		const todos = this.state.todos;
-		todos.push(this.state.data);
-		this.setState({
-			todos: todos,
-			data: '',
-		});
+		if (this.state.data === '') {
+			alert('you cant push empty string mofo');
+		} else {
+			todos.push(this.state.data);
+			this.setState({
+				todos: todos,
+				data: '',
+			});
+		}
 	};
 
 	handleDeletChange = i => {
@@ -35,15 +39,17 @@ class App extends Component {
 	render() {
 		return (
 			<div className='App'>
-				<List
-					todos={this.state.todos}
-					handleDeletChange={this.handleDeletChange}
-				/>
-				<Form
-					data={this.state.data}
-					handleInputChange={this.handleInputChange}
-					handleSubmitChange={this.handleSubmitChange}
-				/>
+				<div className='content-wrapper'>
+					<List
+						todos={this.state.todos}
+						handleDeletChange={this.handleDeletChange}
+					/>
+					<Form
+						data={this.state.data}
+						handleInputChange={this.handleInputChange}
+						handleSubmitChange={this.handleSubmitChange}
+					/>
+				</div>
 			</div>
 		);
 	}
