@@ -1,102 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Saturn</title>
-  <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a62b29f649.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <section class="mobileview-wrapper">
-    <img class="mobileview-img-phone" src="phone.png" alt="phonepic" />
-    <div class="mobileview-container">
-      <img src="logo.png" alt="logo" />
-      <p>Saturn is best experienced on our mobile app</p>
-    </div>
-    <button>Download Saturn</button>
-  </section>
-  <section class="tabletview-wrapper">
-    <div class="tabletview-title-container">
-      <img src="logo2.png" alt="logo" />
-      <div class="tabletview-title-block">
-        <div class="tabletview-title-circle">
-          <p>Period 2</p>
-          <h2>45 : 27</h2>
-          <h4>25% done</h4>
-        </div>
-        <div class="tabletview-title-text">
-          <div class="tabletview-title-classroom">
-            <h3>AP Computer Science</h3>
-            <p>Mr.Nessi • Room 25A • 9:30 - 10:43</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mobile">
+        <div class="mobile__logo">
+          <img
+            class="mobile__background__cover"
+            src="glow.png"
+            alt="pinkbackground"
+          />
+          <div class="mobile__logo__box">
+            <img src="Group 3.png" alt="" />
           </div>
-          <div class="tabletview-title-progress">
-            <p><span>25%</span> of your day is completed!😎</p>
-            <div class="tabletview-progressbar">
-              <div></div>
+        </div>
+        <div class="mobile__introduction">
+          <p>Saturn is best experienced on mobile app</p>
+        </div>
+        <div class="mobile__background"><img src="phone.png" alt="" /></div>
+        <div class="mobile__button"><button>Download Saturn</button></div>
+      </div>
+      <div class="wrapper__nav">
+        <img
+          class="mobile__background__cover"
+          src="glow.png"
+          alt="pinkbackground"
+        />
+        <div class="saturn__icon">
+          <img src="Group 3.png" alt="" /><span> saturn</span>
+        </div>
+        <div class="clock__container">
+          <div class="clock__time">
+            <div class="time__out__circle">
+              <img class="circle__bar" src="Group.png" alt="" />
+              <div class="inner__circle">
+                <div class="circle__period circle__text">Period 2</div>
+                <div class="circle__time">45:27</div>
+                <div class="circle__process circle__text">25% done</div>
+              </div>
+            </div>
+          </div>
+          <div class="classes__date">
+            <div class="class__name">AP Computer Science</div>
+            <div class="classes__info">Mr. Nessi • Room 25A • 9:36-10:43</div>
+          </div>
+          <div class="classes__process">
+            <div class="process__percentage">
+              25% of your day is completed! &nbsp;
+              <span>
+                <img
+                  src="FAVPNG_emoji-sunglasses-emoticon-smiley_cyY8L4ey.png"
+                  alt="sunglass emoji"
+              /></span>
+            </div>
+            <div class="process__bar">
+              <div class="bar__percentage"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="tabletview-content-container">
-      <div class="tabletview-content-title">
-        <div class="tabletview-content-title-text">
-          <p>Belmont High School</p>
-          <h2>Monday, Feb. 24 - <span>A Day</span></h2>
+      <div class="wrapper__content">
+        <div class="content__logout">
+          <a href=""><img src="Frame 397.png" alt=""/></a>
         </div>
-        <button><i class="fas fa-sign-out-alt"></i>Log Out</button>
-      </div>
-      <div class="tabletview-content-list-block">
-        <div class="tabletview-content-list gray">
-          <h3>1</h3>
-          <div class="tabletview-content-list-text gray">
-            <h4>Philosophy</h4>
-            <p>8:00-9:31 • Mr. Nessi • Room 25A</p>
-          </div>
+        <div class="content__date">
+          <div class="date__school">Belmont High School</div>
+          <div class="date__class">Monday, Feb. 24 - <span>A Day</span></div>
         </div>
-        <div class="tabletview-content-list">
-          <h3>2</h3>
-          <div class="tabletview-content-list-text">
-            <h4>Philosophy</h4>
-            <p>8:00-9:31 • Mr. Nessi • Room 25A</p>
-          </div>
-        </div>
-        <div class="tabletview-content-list">
-          <h3>3</h3>
-          <div class="tabletview-content-list-text">
-            <h4>Philosophy</h4>
-            <p>8:00-9:31 • Mr. Nessi • Room 25A</p>
-          </div>
-        </div>
-        <div class="tabletview-content-list">
-          <h3>4</h3>
-          <div class="tabletview-content-list-text">
-            <h4>Philosophy</h4>
-            <p>8:00-9:31 • Mr. Nessi • Room 25A</p>
-          </div>
-        </div>
-        <div class="tabletview-content-list">
-          <h3>5</h3>
-          <div class="tabletview-content-list-text">
-            <h4>Philosophy</h4>
-            <p>8:00-9:31 • Mr. Nessi • Room 25A</p>
-          </div>
-        </div>
-        <div class="tabletview-content-list">
-          <h3>6</h3>
-          <div class="tabletview-content-list-text">
-            <h4>Philosophy</h4>
-            <p>8:00-9:31 • Mr. Nessi • Room 25A</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
+        <hr class="line__split" />
+        <div class="content__classes__container">
+          <ul>
+            <li>
+              <div class="li__order"><p>1</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
+            <li>
+              <div class="li__order"><p>2</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
+            <li>
+              <div class="li__order"><p>3</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
+            <li>
+              <div class="li__order"><p>4</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
+            <li>
+              <div class="li__order"><p>5</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
 
+            <li>
+              <div class="li__order"><p>6</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
+
+            <li>
+              <div class="li__order"><p>7</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+            <hr class="line__split line--short" />
+
+            <li>
+              <div class="li__order"><p>8</p></div>
+              <div class="container__date">
+                <div class="container__date__class">Philosophy</div>
+                <div class="container__date__info">
+                  8:00-9:31 · Mr.Nessi · Room25A
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
