@@ -1,0 +1,64 @@
+body {
+	margin: 0px;
+	width: 100%;
+	font-family: 'Acme', sans-serif;
+}
+
+.parallax img {
+	object-fit: cover;
+	width: 100%;
+	position: relative;
+}
+
+.fade {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 20px;
+	background-image: linear-gradient(
+		to top,
+		rgba(255, 255, 255, 1),
+		rgba(255, 255, 255, 0.1)
+	);
+}
+
+.white {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.white .row {
+	margin: 40px 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.white .reverse {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.block {
+	width: 50%;
+	margin: 0 80px;
+}
+
+.avatar {
+	width: 20%;
+	height: 20%;
+}
+
+.leftimg {
+	width: 14%;
+	height: 14%;
+	padding-left: 30px;
+}
+
+.rightimg {
+	width: 12%;
+	height: 12%;
+	/* padding-left: 30px; */
+}
