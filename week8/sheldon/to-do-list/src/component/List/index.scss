@@ -1,6 +1,5 @@
 .list {
 	height: 80%;
-
 	overflow-y: scroll;
 	background-color: #db4437;
 	border-radius: 10px;
@@ -14,4 +13,12 @@
 	margin: 5px auto;
 	display: flex;
 	justify-content: space-between;
+}
+
+.active {
+	background-color: rgb(87, 87, 5);
+}
+
+.list::-webkit-scrollbar {
+	display: none;
 }

@@ -6,7 +6,24 @@ import List from './component/List';
 class App extends Component {
 	state = {
 		data: '',
-		todos: ['写作业', '学react', '找工作'],
+		todos: [
+			{
+				text: 'hi',
+				isActive: false,
+			},
+			{
+				text: 'hello',
+				isActive: false,
+			},
+		],
+	};
+
+
+
+	handleTodoClassNameToggle = i => {
+		const todos = this.state.todos;
+		todos[i].isActive = !todos[i].isActive;
+		this.setState({ ...this.state, todos });
 	};
 
 	handleInputChange = element => {
@@ -41,6 +58,8 @@ class App extends Component {
 			<div className='App'>
 				<div className='content-wrapper'>
 					<List
+						handleTodoClassName={this.handleTodoClassName}
+						handleTodoClassNameToggle={this.handleTodoClassNameToggle}
 						todos={this.state.todos}
 						handleDeletChange={this.handleDeletChange}
 					/>
