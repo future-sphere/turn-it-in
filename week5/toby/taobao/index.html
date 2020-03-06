@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="taobao.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <img src="taobaologo.png" alt="taobaologo" />
+        <span>账户登陆</span>
+      </div>
+    </header>
+    <hr class="header__line" />
+    <div class="main">
+      <div class="main__login">
+        <div class="main__login__username" style="display: block;"  id="qrcodeUsernameTransitionButton">
+          <div class="loginin__username__title">
+            密码登陆<span class="loginin__username__title__shield">
+              <i class="fas fa-shield-alt login__shield"></i
+              > &nbsp; 扫码登录更安全</span
+            ><span class="login__username__title--qrswitch"></span>
+            <div class="arrow__down"></div>
+            <div class="arrow__right"></div>
+            <button class="login__transition" onclick="onClick()">
+                <img
+                  class="login__qrcode"
+                  src="qrcode2.png"
+                  alt="qrcode"
+                  /></button>
+                </span>
+          </div>
+          <div class="login__username__input">
+            <div class="login__username__input--username">
+              <i class="fas fa-user"></i><input type="text"  placeholder="会员名/邮箱"/>
+            </div>
+            <div class="login__username__input--username">
+              <i class="fas fa-lock"></i><input type="text" />
+            </div>
+            <div class="login__username__input--button">
+              <button>登陆</button>
+            </div>
+          </div>
+          <div class="login__username__facebook">
+            <i class="fab fa-facebook-square"></i><a href="">Log In</a>
+          </div>
+          <div class="login__username__link">
+            <a class="login__link__phone" href="">手机号登陆</a>
+            <a href="">忘记密码</a>
+            <a href="">忘记会员名</a>
+            <a href="">免费注册</a>
+          </div>
+        </div>
+        <div class="main__login__qrcode" style="display: none;" id="usernameQrcodeTransitionButton">
+          <div class="loginin__username__title">
+            手机扫码，安全登录<span class="loginin__username__title__shield login__qrcode__shield">
+              <i class="fas fa-shield-alt login__shield"></i
+              > &nbsp; 密码登陆在这里</span
+            ><span class="login__username__title--qrswitch"></span>
+            <div class="arrow__down"></div>
+            <div class="arrow__right"></div>
+            <button class="login__transition" onclick="onClickReturnPage()">
+              <img src="desktop3.png" class="login__qrcode" alt="desktopicon"></button>
+                </span>
+          </div>
+          <div class="login__qrcode__code" >
+            <div class="login__qrcode__qrimg">
+              <img src="qrcode.png" alt="qrcode"  class="qrcode__code__pic"
+              id="loginQrcode"/>
+              
+              <img src="qrsample.png" alt="qr sample" style="display: none;"  class="qrcode__sample"
+              src="qrsaoyisao.jpeg"
+              id="loginSuggestion"/>
+            </div>
+          </div>
+          <div class="login__qrcode__text">
+            <i class="fas fa-hourglass-half"></i>&nbsp;
+            <span
+            >打开<a href="">手机淘宝</a><span>｜</span
+              ><a href="">手机天猫</a><br />扫一扫登陆</span
+              >
+          </div>
+          <div class="login__qrcode__link">
+            <a href="">密码登录</a>
+            <a href="">免费注册</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="sub__main">
+      <div class="sub__main__wrapper">
+      <div class="sub__main__picture">
+        <img src="insurance.svg" alt="insurance logo" />
+        <span>
+          <div class="sub__main__picture__title">淘宝网消费者保障</div>
+          <div class="sub__main__picture__content">未收到货，全额退款；商品与描述不符合，退货保障</div>
+        </span>
+      </div>
+      <div class="sub__main__picture">
+        <img src="alipay.svg" alt="alipay logo" />
+        <span>
+          <div class="sub__main__picture__title">支付宝担保交易</div>
+          <div class="sub__main__picture__content">没有您的统一，我们不会将您的钱款交付给卖家</div>
+        </span>
+      </div>
+      <div class="sub__main__picture">
+        <img src="24hours.svg" alt="24 hours logo" />
+        <span>
+          <div class="sub__main__picture__title">24小时在线帮助</div>
+          <div class="sub__main__picture__content">购物小帮手，为您提供无忧购物体验</div>
+        </span>
+      </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="footer__link">
+        <a href="">阿里巴巴集团</a><span>|</span> <a href="">淘宝网</a
+        ><span>|</span> <a href="">天猫</a><span>|</span> <a href="">聚划算</a
+        ><span>|</span> <a href="">全球速卖通</a><span>|</span>
+        <a href="">阿里巴巴国际交易市场</a><span>|</span> <a href="">1688</a
+        ><span>|</span> <a href="">阿里妈妈</a><span>|</span>
+        <a href="">阿里云计算</a><span>|</span> <a href="">YunOS</a
+        ><span>|</span> <a href="">万网</a><span>|</span> <a href="">淘宝旅行</a
+        ><span>|</span> <a href="">虾米</a><span>|</span> <a href="">来往</a
+        ><span>|</span> <a href="">支付宝</a><span>|</span>
+      </div>
+      <div class="footer__link__lawyer">
+        <a href="">关于淘宝</a><span></span> <a href="">合作伙伴</a
+        ><span></span> <a href="">营销中心</a><span></span>
+        <a href="">知识产权</a><span></span> <a href="">廉政举报</a
+        ><span></span> <a href="">联系客服</a><span></span>
+        <a href="">开放平台</a><span></span> <a href="">诚征英才</a
+        ><span></span> <a href="">联系我们</a><span></span>
+        <a href="">网站地图</a><span></span> <a href="">法律声明</a
+        ><span></span>
+        <span>© 2003-2017 Taobao.com 版权所有</span>
+      </div>
+      <div class="footer__copyrights">
+        网络文化经营许可：<a href="">文网文[2010]040号 </a
+        ><span>|</span>增值电信业务经营许可证：浙b2-20080224-1 <span>|</span>
+        信息网络传播视听节目许可证：1109364号
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a62b29f649.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function onClick() {
+        document.getElementById("qrcodeUsernameTransitionButton").style.display = "none";
+        document.getElementById("usernameQrcodeTransitionButton").style.display="block";
+        }
+      function onClickReturnPage() {
+        document.getElementById("qrcodeUsernameTransitionButton").style.display ="block";
+        document.getElementById("usernameQrcodeTransitionButton").style.display ="none";
+        }
+    </script>
+    <script>
+      document
+        .getElementById("loginQrcode")
+        .addEventListener("mouseover", mouseOver);
+      document
+        .getElementById("loginQrcode")
+        .addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        document.getElementById("loginSuggestion").style.display =
+          "inline-block";
+      }
+
+      function mouseOut() {
+        document.getElementById("loginSuggestion").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
