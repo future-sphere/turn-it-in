@@ -1,0 +1,59 @@
+import React, { Component } from 'react';
+import Champion from './components/Champion';
+import Popup from './components/Popup';
+import ChampionServices from './services/champions';
+import Footer from './components/Footer';
+import './App.css';
+
+export default class App extends Component {
+	state = {
+		champions: {},
+		isPopupOpen: false,
+		currentChampion: {},
+	};
+	componentDidMount = async () => {
+		const champions = await ChampionServices.fetchAllChampions();
+		console.log(champions);
+		this.setState({
+			champions: champions.data.data,
+		});
+	};
+
+	handleChampionClick = championId => {
+		const currentChampion = this.state.champions[championId];
+		this.setState({
+			...this.state,
+			currentChampion,
+			isPopupOpen: true,
+		});
+	};
+
+	handleClosePop = () => {
+		this.setState({
+			...this.state,
+			isPopupOpen: false,
+		});
+	};
+
+	render() {
+		return (
+			<div className='App'>
+				<h1>LEAGUE OF LEGENDS</h1>
+				<Popup
+					isPopupOpen={this.state.isPopupOpen}
+					currentChampion={this.state.currentChampion}
+					handleClosePop={this.handleClosePop}
+				/>
+				<div className='champions-container'>
+					{Object.entries(this.state.champions).map(champion => (
+						<Champion
+							data={champion}
+							handleChampionClick={this.handleChampionClick}
+						/>
+					))}
+				</div>
+				<Footer />
+			</div>
+		);
+	}
+}

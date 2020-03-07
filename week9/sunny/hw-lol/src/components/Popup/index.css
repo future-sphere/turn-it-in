@@ -1,0 +1,45 @@
+.popup-wrapper {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(160, 156, 156, 0.5);
+	display: none;
+}
+
+.popup-wrapper.active {
+	display: block;
+}
+
+.popup button {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	font-size: 20px;
+	color: rgba(75, 89, 117, 0.884);
+	background-color: transparent;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	outline: none;
+}
+
+.popup button i:hover {
+	color: rgb(140, 155, 155);
+}
+
+.popup h3 {
+	font-family: 'Trade Winds', cursive;
+	font-size: 34px;
+	font-weight: 700;
+	background: -webkit-linear-gradient(rgb(248, 247, 247), rgb(87, 86, 86));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.popup img {
+	width: 65%;
+	height: auto;
+	border-radius: 5px;
+}

@@ -1,0 +1,45 @@
+.champion {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.205);
+	border-radius: 10px;
+	font-family: 'Neucha', cursive;
+	text-transform: uppercase;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.champion:hover {
+	background-color: rgba(51, 51, 59, 0.596);
+}
+
+.champion img {
+	width: 250px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.champion h3 {
+	background: -webkit-linear-gradient(rgb(248, 247, 247), rgb(87, 86, 86));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.champion p {
+	font-size: 16px;
+	color: black;
+	margin-bottom: 8px;
+}
+
+.champion-link {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	background: rgba(0, 0, 0, 0.3);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.champion-link:hover {
+	background: #000;
+}
