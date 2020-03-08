@@ -1,0 +1,41 @@
+.popup {
+	flex-direction: column;
+	align-items: center;
+	border-radius: 40px;
+	box-shadow: 5px 5px 9px #000;
+}
+
+.popup h3 {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-family: 'Trade Winds', cursive;
+	bottom: 70px;
+}
+
+.popup h4 {
+	color: #eec35d;
+	font: 24px;
+	margin: 8px;
+}
+
+.popup img:hover {
+	opacity: 0.8;
+}
+
+.popup img {
+	margin-top: 30px;
+
+	width: 55%;
+}
+
+.popup button {
+	background-color: transparent;
+	color: #fff;
+	border-style: none;
+	position: fixed;
+	top: 15px;
+	right: 20px;
+	outline-style: none;
+	font-size: 14px;
+}
