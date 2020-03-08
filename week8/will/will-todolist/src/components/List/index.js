@@ -13,7 +13,7 @@ const list = ({ todo, handleListColor, handleListDelete }) => {
 							<button onClick={() => handleListColor(i)}>
 								<i class='fas fa-check-circle'></i>
 							</button>
-							<span>{v}</span>
+							<span>{v.text}</span>
 							<button onClick={() => handleListDelete(i)}>
 								<i class='fas fa-times-circle'></i>
 							</button>

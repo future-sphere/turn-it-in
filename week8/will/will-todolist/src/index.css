@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../src//assets/img/bgimg.png);
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   align-items: center;
 

@@ -23,9 +23,9 @@ export default class App extends Component {
 		if (data == '') {
 			alert("What's your plan for the day?");
 		} else {
-			todo.push(data);
+			todo.push({ text: data, isActive: false });
 			this.setState({
-				todo: todo,
+				todo,
 				data: '',
 			});
 		}
