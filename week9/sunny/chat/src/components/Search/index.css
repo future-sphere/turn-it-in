@@ -1,0 +1,28 @@
+form {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	border-bottom: 1px solid #b6b6b6;
+}
+
+.input {
+	padding: 8px;
+	width: 80%;
+	border: 1px solid #b6b6b6;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+}
+
+.input i {
+	font-size: 14px;
+	padding-left: 10px;
+	margin-right: 15px;
+	color: #b6b6b6;
+}
+
+.search input {
+	width: 100%;
+	border: none;
+	outline: none;
+}

@@ -1,0 +1,41 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+h4 {
+	margin: 0;
+}
+
+.App {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	height: 100vh;
+}
+
+.chat-left {
+	background: #202932;
+	color: #fff;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.chat-right {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.chat-right-bottom {
+	display: grid;
+	grid-template-columns: 35% 65%;
+	height: calc(100vh - 64px);
+}
