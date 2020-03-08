@@ -1,0 +1,39 @@
+.right__account {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	.account__name {
+		color: #fff;
+		text-align: center;
+		margin-right: 24px;
+		font-size: 16px;
+	}
+	.notification {
+		display: flex;
+		color: #fff;
+		margin-right: 16px;
+		i {
+			font-size: 25px;
+		}
+		span {
+			background-color: #e50914;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			position: relative;
+			bottom: 6px;
+			right: 12px;
+		}
+	}
+
+	.dropdown__menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg:last-of-type {
+			height: 6px;
+			width: 12px;
+			margin-left: 10px;
+		}
+	}
+}
