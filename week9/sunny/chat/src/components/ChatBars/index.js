@@ -2,7 +2,7 @@ import React from 'react';
 import avatarUrl from '../../constant/avatar';
 import './index.css';
 
-export default function ChatBars({ groups, users, handleClickOpen }) {
+export default function ChatBars({ groups, users, handleClickOpen, isRead }) {
 	return (
 		<div className='chat-container'>
 			<div className='chat-bar-nav'>
@@ -51,6 +51,7 @@ export default function ChatBars({ groups, users, handleClickOpen }) {
 									{displayTime}
 									{/* {`${lastSendTime.slice(0, 2)}:${lastSendTime.slice(2)}`} */}
 								</p>
+								<div className='unread-num'>{isRead(data.conversations)}</div>
 							</div>
 						);
 					})}

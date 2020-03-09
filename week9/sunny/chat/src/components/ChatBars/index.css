@@ -74,3 +74,19 @@
 	right: 20px;
 	font-size: 12px;
 }
+
+.unread-num {
+	position: absolute;
+	bottom: 20%;
+	right: 20px;
+	font-size: 12px;
+	width: 20px;
+	height: 20px;
+	background: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	color: white;
+	padding: 3px;
+}

@@ -18,19 +18,66 @@
 	align-items: center;
 }
 
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+
 .conversations img {
 	width: 25px;
 	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.add-member {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #b8b8b8;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	color: #b8b8b8;
+}
+
+.tools {
+	color: #b8b8b8;
+	font-size: 20px;
+}
+
+.tools span {
+	margin-left: 10px;
+}
+
+.tools i {
+	margin-left: 10px;
 }
 
 .conversation-content {
 	padding: 20px;
 }
 
-/* .self {
-	display: flex-end;
-	background: red;
-} */
+.self .single-message-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.single-message-wrapper {
+	width: 60%;
+}
+
+.self img {
+	display: none;
+}
+
+.self span {
+	display: none;
+}
+
+.self .message {
+	background: #eee;
+}
 
 .single-message-container {
 	width: 100%;
@@ -38,7 +85,6 @@
 }
 
 .header {
-	width: 60%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -63,7 +109,6 @@
 }
 
 .message {
-	width: 60%;
 	padding: 10px;
 	border: 1px solid #b8b8b8;
 	border-radius: 5px;

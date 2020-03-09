@@ -33,8 +33,14 @@ function App() {
 		setCurrentChat(v);
 	};
 
-	const handleClickClose = () => {
-		setActive(!isActive);
+	const isRead = conversation => {
+		let n = 0;
+		for (let i = 0; i < conversation.length; i++) {
+			if (conversation[i].isRead === false) {
+				n++;
+			}
+		}
+		return n;
 	};
 
 	return (
@@ -47,12 +53,12 @@ function App() {
 						groups={groups}
 						users={users}
 						handleClickOpen={handleClickOpen}
+						isRead={isRead}
 					/>
 					<Conversation
 						users={users}
 						isActive={isActive}
 						currentChat={currentChat}
-						handleClickClose={handleClickClose}
 					/>
 				</div>
 			</div>
