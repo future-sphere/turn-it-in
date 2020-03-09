@@ -1,0 +1,39 @@
+.search-container {
+	height: 48px;
+	display: grid;
+	grid-template-columns: 80% 20%;
+	align-items: center;
+	border-bottom: 1px solid rgba(225, 225, 225, 0.8);
+}
+
+.search-container input {
+	align-items: center;
+	width: 100%;
+	padding: 6px 6px 6px 24px;
+	border-style: none;
+	border: 1px solid rgba(225, 225, 225, 0.6);
+	border-radius: 3px;
+}
+
+.search-box {
+	margin: 15px;
+	display: flex;
+	color: grey;
+	align-items: center;
+}
+
+.search-box i {
+	font-size: 12px;
+	position: fixed;
+}
+
+.language-box {
+	align-items: center;
+}
+
+.language-box button {
+	border-style: none;
+	padding: 5px 10px;
+	margin-left:20px;
+	border: 1px solid rgba(225, 225, 225, 0.6);
+}
