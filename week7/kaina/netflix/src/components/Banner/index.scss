@@ -2,13 +2,14 @@
 
 .banner-container {
 	background-image: url(../../assets/images/hero-bg.png);
+	background-repeat: no-repeat;
 	margin-top: 60px;
 	width: 100%;
 	padding: 160px 60px 150px 60px;
 	color: $white;
 	.title-box {
 		h3 {
-			font-size: 27px;
+			font-size: 28px;
 			text-transform: uppercase;
 			margin: 0px;
 			color: $white;
@@ -16,7 +17,7 @@
 		}
 		span {
 			text-transform: uppercase;
-			font-size: 27px;
+			font-size: 28px;
 			font-weight: 300;
 		}
 	}
@@ -48,7 +49,7 @@
 			svg {
 				margin: 0px 10px 0px 36px;
 			}
-			margin-right: 87px;
+			margin-right: 86px;
 		}
 		.list {
 			display: flex;
