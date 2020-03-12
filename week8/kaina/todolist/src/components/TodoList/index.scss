@@ -1,78 +1,82 @@
 .form-container {
-	background-color: #b7cad4;
-	width: 100%;
-	height: 500px;
-	max-width: 380px;
-	margin: 40px auto;
-	border-radius: 30px;
-	border: 5px solid rgba(229, 243, 254, 0.5);
-	box-shadow: 10px 10px 10px #888888;
+	display: flex;
+	justify-content: center;
+	margin: auto;
 
-	.title {
-		h3 {
-			font-size: 38px;
-			color: #fff;
-			font-family: 'Pacifico';
-			font-weight: 200;
-			margin: 32px auto 10px auto;
-		}
-	}
+	.todolist {
+		background-color: #b7cad4;
+		margin: 40px auto;
+		border-radius: 30px;
+		border: 5px solid rgba(229, 243, 254, 0.5);
+		box-shadow: 10px 10px 10px #888888;
+		align-items: center;
 
-	.form-box {
-		height: 260px;
-		overflow-x: scroll;
-
-		.todo {
-			display: flex;
-			justify-content: center;
-		}
-		.text-box {
-			padding: 8px 16px;
-			width: 200px;
-
-			span {
-				font-size: 24px;
-				color: #819cba;
-				text-transform: capitalize;
-				font-weight: 600;
+		.title {
+			h3 {
+				font-size: 38px;
+				color: #fff;
+				font-family: 'Pacifico';
+				font-weight: 200;
+				margin: 32px auto 10px auto;
 			}
 		}
-		button {
-			font-size: 16px;
-			background-color: transparent;
-			// color: #b7cad4;
-			border-style: none;
-			outline-style: none;
-		}
-		button:hover {
-			color: rgba($color: #888, $alpha: 0.9);
-		}
-	}
 
-	.submit-box {
-		position: relative;
-		bottom: -30px;
+		.form-box {
+			height: 260px;
+			overflow-x: scroll;
 
-		input {
-			color: #819cba;
-			font-family: 'Shadows Into Light Two';
-			font-size: 18px;
-			letter-spacing: 1px;
-			border-style: none;
-			border-radius: 30px;
-			padding: 8px 16px;
-			width: 200px;
-			margin-bottom: 38px;
-			outline-style: none;
+			.todo {
+				display: flex;
+				justify-content: center;
+			}
+			.text-box {
+				padding: 8px 16px;
+				width: 200px;
+
+				span {
+					font-size: 24px;
+					color: #819cba;
+					text-transform: capitalize;
+					font-weight: 600;
+				}
+			}
+			button {
+				font-size: 16px;
+				background-color: transparent;
+				// color: #b7cad4;
+				border-style: none;
+				outline-style: none;
+			}
+			button:hover {
+				color: rgba($color: #888, $alpha: 0.9);
+			}
 		}
 
-		button {
-			border-style: none;
-			color: #3c4043;
-			background-color: transparent;
-			margin-top: 20px;
-			font-size: 16px;
-			outline: none;
+		.submit-box {
+			position: relative;
+			bottom: -30px;
+
+			input {
+				color: #819cba;
+				font-family: 'Shadows Into Light Two';
+				font-size: 18px;
+				letter-spacing: 1px;
+				border-style: none;
+				border-radius: 30px;
+				padding: 8px 16px;
+				width: 200px;
+				margin-bottom: 38px;
+				outline-style: none;
+			}
+
+			button {
+				border-style: none;
+				color: #3c4043;
+				background-color: transparent;
+				margin-top: 20px;
+				font-size: 16px;
+				outline: none;
+			}
 		}
 	}
 }

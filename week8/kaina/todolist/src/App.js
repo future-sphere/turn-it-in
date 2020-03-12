@@ -47,14 +47,16 @@ class App extends Component {
 	render() {
 		return (
 			<div className='App'>
-				<TodoList
-					handleDeleteTodo={this.handleDeleteTodo}
-					todos={this.state.todos}
-					handleInputChange={this.handleInputChange}
-					data={this.state.data}
-					handleSubmitChange={this.handleSubmitChange}
-					pressEnterChange={this.pressEnterChange}
-				/>
+				<div className='todolist'>
+					<TodoList
+						handleDeleteTodo={this.handleDeleteTodo}
+						todos={this.state.todos}
+						handleInputChange={this.handleInputChange}
+						data={this.state.data}
+						handleSubmitChange={this.handleSubmitChange}
+						pressEnterChange={this.pressEnterChange}
+					/>
+				</div>
 			</div>
 		);
 	}
