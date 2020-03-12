@@ -1,0 +1,20 @@
+.popularlist {
+	color: #fff;
+	padding: 0 0 45px 60px;
+	margin-top: -35px;
+
+	h4 {
+		margin: 10px 0;
+		text-align: left;
+		font-size: 20px;
+	}
+	.popular__movies {
+		display: flex;
+		align-items: flex-start;
+		overflow: auto;
+		white-space: nowrap;
+	}
+	img {
+		height: 124px;
+	}
+}
