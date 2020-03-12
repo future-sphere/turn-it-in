@@ -1,12 +1,10 @@
 .nav-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: #202932;
   color: #fff;
   height: 100vh;
   font-family: cursive;
   overflow-x: scroll;
+  max-width: 230px;
 
   .top-container {
     h4 {

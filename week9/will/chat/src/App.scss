@@ -1,16 +1,14 @@
 .app-wrapper {
-	position: relative;
+	display: flex;
 
 	.body-container {
 		display: flex;
 		flex-direction: column;
-		padding-left: 228px;
 	}
 
 	.body-block {
-		// display: flex;
-		// justify-content: space-between;
-		// width: auto;
+		display: flex;
+		justify-content: space-between;
 
 		img {
 			width: 50px;

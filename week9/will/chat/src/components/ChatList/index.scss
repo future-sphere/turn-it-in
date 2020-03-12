@@ -1,18 +1,15 @@
 .chatlist {
-  position: fixed;
   width: 260px;
   overflow: scroll;
-  height: 92vh;
+  height: 94vh;
 
   .chat-list-top {
     position: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #fff;
-    z-index: 4;
-    padding: 10px;
+    padding-left: 10px;
 
     p {
       font-size: 14px;
@@ -30,6 +27,7 @@
   }
 
   .chat-list-wrapper {
+    overflow: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,9 +49,12 @@
         align-self: center;
         padding-left: 4px;
         padding-right: 10px;
+        height: 20px;
+        overflow: hidden;
 
         img {
-          position: absolute;
+          overflow: hidden;
+          // position: absolute;
           width: 20px;
           height: 20px;
           border-radius: 50%;
