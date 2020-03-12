@@ -1,5 +1,4 @@
 .movie-list-wrapper {
-  max-width: 1440px;
   width: 100%;
   background-color: #141414;
   display: flex;
@@ -17,7 +16,6 @@
 
   .movie-list-container {
     width: 100%;
-    max-width: 100%;
     overflow: hidden;
 
     .movie-list-block {

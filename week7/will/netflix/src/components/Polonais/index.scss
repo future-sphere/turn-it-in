@@ -1,8 +1,7 @@
 .container {
   background-image: url(../../assets/img/polonais-bg.jpg);
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
-  max-width: 1440px;
 
   .polonais-block {
     margin-left: 60px;
@@ -35,7 +34,6 @@
   }
 
   .movielist-container {
-    max-width: 1440px;
     width: 100%;
     display: flex;
     padding-bottom: 80px;
