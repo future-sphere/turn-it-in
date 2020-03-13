@@ -8,7 +8,9 @@ const TodoList = ({
 	each,
 	index,
 	input,
+	editData,
 	todo,
+	handleEdit,
 	handleGetValue,
 	handleSubmmitData,
 	handlePush,
@@ -17,19 +19,46 @@ const TodoList = ({
 	handleSwitch,
 	handleRemove,
 	handleMove,
+	handleGetEdit,
+	handleSubmmitEdit,
+	handleTodoEdit,
 }) => {
 	return (
 		<div className='wrapper'>
 			<div className='title'>
-				<h2 onClick={() => handleMove(index, each)}>{each.title}</h2>
-				<i onClick={() => handleRemove(index)} class='fas fa-skull'></i>
+				<div className={classnames('initial', { close: each.isEdit === true })}>
+					<h2 onClick={() => handleEdit(index)}>{each.title}</h2>
+					<i onClick={() => handleRemove(index)} class='fas fa-skull'></i>
+				</div>
+				<input
+					className={classnames('input', { close: each.isEdit === false })}
+					type='text'
+					onChange={handleGetEdit}
+					value={editData}
+					onKeyDown={e => handleSubmmitEdit(e, index, 0, 1)}
+				/>
 			</div>
 			<div className='container'>
 				{each.todos &&
 					each.todos.map((v, i) => (
 						<div className='todo-container'>
 							<div className='todo-block'>
-								<p>{v.text}</p>
+								<p
+									className={classnames('initial', {
+										close: v.isEdit === true,
+									})}
+									onClick={() => handleTodoEdit(index, i)}>
+									{v.text}
+								</p>
+								<input
+									className={classnames('input', {
+										close: v.isEdit === false,
+									})}
+									type='text'
+									onChange={handleGetEdit}
+									value={editData}
+									onKeyDown={e => handleSubmmitEdit(e, index, i, 2)}
+								/>
 								<div className='todo-button-container'>
 									<div
 										onClick={() => handleSwitch(index, i)}

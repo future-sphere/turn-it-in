@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 20px;
-  width: 300px;
+  min-width: 300px;
   height: 70vh;
 
   h2 {
@@ -11,24 +11,33 @@
   }
 
   .title {
-    display: flex;
-    align-items: center;
 
-    i {
-      margin-bottom: 8px;
-      margin-left: 10px;
-      color: transparent;
+    .initial {
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-bottom: 8px;
+        margin-left: 10px;
+        color: transparent;
+      }
+
+      i:hover {
+        color: rgba($color: red, $alpha: .7);
+      }
     }
 
-    i:hover {
-      color: rgba($color: red, $alpha: .7);
+    input {
+      font-size: 24px;
+      margin: 0px;
+      margin-bottom: 8px;
     }
   }
 
   .container {
-    overflow-x: scroll;
 
     .todo-container {
+      width: 100%;
       background-color: #fff;
       height: auto;
       padding: 2px 30px;
@@ -42,6 +51,15 @@
         p {
           font-size: 20px;
           color: #646678;
+          margin-bottom: 16px;
+        }
+
+        input {
+          width: 80%;
+          margin: 0;
+          margin-right: 16px;
+          border: 1px solid #f5f5f5;
+
         }
 
         .todo-button-container {
@@ -101,5 +119,9 @@
 
   .off {
     color: transparent;
+  }
+
+  .close {
+    display: none;
   }
 }

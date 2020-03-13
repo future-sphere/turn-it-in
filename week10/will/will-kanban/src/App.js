@@ -5,18 +5,50 @@ import './App.scss';
 
 const initialAdd = '';
 const initialTodo = [
-	{ todos: [], title: 'Backlog' },
-	{ todos: [], title: 'In progress' },
-	{ todos: [], title: 'Review' },
-	{ todos: [], title: 'Done' },
+	{ todos: [], title: 'Backlog', isEdit: false },
+	{ todos: [], title: 'In progress', isEdit: false },
+	{ todos: [], title: 'Review', isEdit: false },
+	{ todos: [], title: 'Done', isEdit: false },
 ];
 const App = () => {
 	const [todo, setTodo] = useState(initialTodo);
 	const [input, setInput] = useState(['', '', '', '']);
 	const [add, setAdd] = useState(initialAdd);
+	const [editData, setEditData] = useState('');
+
+	const handleEdit = index => {
+		const newTodo = [...todo];
+		newTodo[index].isEdit = !newTodo[index].isEdit;
+		setTodo(newTodo);
+	};
+
+	const handleTodoEdit = (index, i) => {
+		const newTodo = [...todo];
+		newTodo[index].todos[i].isEdit = !newTodo[index].todos[i].isEdit;
+		setTodo(newTodo);
+	};
+
+	const handleSubmmitEdit = (e, index, i, n) => {
+		const newTodo = [...todo];
+		if (e.keyCode == 13 && editData !== '' && n == 1) {
+			newTodo[index].title = editData;
+			setTodo(newTodo);
+			setEditData('');
+			handleEdit(index);
+		} else if (e.keyCode == 13 && editData == '' && n == 1) alert('Sorry');
+		else if (e.keyCode == 13 && editData !== '' && n == 2) {
+			newTodo[index].todos[i].txet = editData;
+			setTodo(newTodo);
+			setEditData('');
+			handleTodoEdit(index, i);
+		} else if (e.keyCode == 13 && editData == '' && n == 2) alert('Sorry');
+	};
+
+	const handleGetEdit = e => {
+		setEditData(e.target.value);
+	};
 
 	const handleGetAdd = e => {
-		const newAdd = [...add];
 		setAdd(e.target.value);
 	};
 
@@ -32,7 +64,7 @@ const App = () => {
 		const newTodo = [...todo];
 		if (newAdd == '') alert('Sorry');
 		else {
-			newTodo.push({ todos: [], title: newAdd });
+			newTodo.push({ todos: [], title: newAdd, isEdit: false });
 			newInput.push('');
 		}
 		setTodo(newTodo);
@@ -66,7 +98,11 @@ const App = () => {
 		const newTodo = [...todo];
 		if (input[index] == '') alert('Sorry,input is empty');
 		else {
-			newTodo[index].todos.push({ text: input[index], isFinished: false });
+			newTodo[index].todos.push({
+				text: input[index],
+				isFinished: false,
+				isEdit: false,
+			});
 		}
 		const newInput = [...input];
 		newInput[index] = '';
@@ -108,7 +144,9 @@ const App = () => {
 						each={each}
 						index={index}
 						input={input}
+						editData={editData}
 						todo={todo}
+						handleEdit={handleEdit}
 						handleGetValue={handleGetValue}
 						handleSubmmitData={handleSubmmitData}
 						handlePush={handlePush}
@@ -117,6 +155,9 @@ const App = () => {
 						handleSwitch={handleSwitch}
 						handleRemove={handleRemove}
 						handleMove={handleMove}
+						handleGetEdit={handleGetEdit}
+						handleSubmmitEdit={handleSubmmitEdit}
+						handleTodoEdit={handleTodoEdit}
 					/>
 				))}
 			</div>

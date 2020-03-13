@@ -4,6 +4,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+input {
+  outline: none;
+}
+
 i {
   cursor: pointer;
 }
@@ -13,10 +17,11 @@ i {
   height: 100vh;
 
   .app-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .wrapper {}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: scroll;
+    white-space: nowrap;
   }
 }
