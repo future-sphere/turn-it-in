@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+.App {
+  background-color: #fff;
+
+  .body-container {
+    margin: 0 180px;
+  }
+
+  .off {
+    display: none !important
+  }
+
+  .on {
+    display: block !important
+  }
+}
