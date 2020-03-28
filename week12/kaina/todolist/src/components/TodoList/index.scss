@@ -1,0 +1,87 @@
+.form-container {
+	display: flex;
+	justify-content: center;
+
+	.todolist {
+		background-color: #b7cad4;
+		border-radius: 30px;
+		border: 5px solid rgba(229, 243, 254, 0.5);
+		box-shadow: 10px 10px 10px #888888;
+		align-items: center;
+		.title {
+			display: inline-block;
+			h3 {
+				display: inline-block;
+				width: 100%;
+				font-size: 32px;
+				color: #fff;
+				font-family: 'Pacifico';
+				font-weight: 200;
+				padding: 32px auto 10px auto;
+			}
+		}
+
+		.form-box {
+			height: 260px;
+			overflow-x: scroll;
+
+			.todo {
+				display: flex;
+				flex-direction: column;
+
+				.input-todo {
+					display: flex;
+					padding: 12px 38px;
+					justify-content: space-between;
+				}
+			}
+			.text-box {
+				width: 200px;
+				text-align: start;
+
+				span {
+					font-size: 24px;
+					color: #819cba;
+					text-transform: capitalize;
+					font-weight: 600;
+				}
+			}
+			button {
+				font-size: 16px;
+				background-color: transparent;
+				border-style: none;
+				outline-style: none;
+			}
+		}
+
+		.submit-box {
+			display: flex;
+			padding: 12px 38px;
+			justify-content: space-between;
+			align-items: center;
+
+			input {
+				color: #819cba;
+				font-family: 'Shadows Into Light Two';
+				font-size: 18px;
+				letter-spacing: 1px;
+				border-style: none;
+				border-radius: 30px;
+				padding: 8px 16px;
+				width: 200px;
+				outline-style: none;
+			}
+
+			button {
+				border-style: none;
+				color: #3c4043;
+				background-color: transparent;
+				font-size: 16px;
+				outline: none;
+			}
+		}
+		button:hover {
+			color: rgba($color: #888, $alpha: 0.9);
+		}
+	}
+}
