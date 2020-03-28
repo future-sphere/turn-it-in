@@ -21,7 +21,7 @@ const SelectDropDown = ({ handleGenderChange }) => {
 				name='gender'
 				value={gender}
 				placeholder='Enter your gender'
-				readonly='readonly'
+				readOnly='readOnly'
 			/>
 			<i onClick={genderDropDown} class='fas fa-angle-down'></i>
 			<div

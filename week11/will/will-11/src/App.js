@@ -37,7 +37,8 @@ function App({ history }) {
 				<div className='App'>
 					<Route exact path='/' component={LoginPage} />
 					<Route path='/home/' component={HomePage} />
-					<Route path='/:user/:page' component={UserPage} />
+					<Route path='/:user/:page/' component={UserPage} />
+					{/* <Route path={`/${userId}/setting`} component={UserPage} /> */}
 				</div>
 			</AppContext.Provider>
 		</Router>

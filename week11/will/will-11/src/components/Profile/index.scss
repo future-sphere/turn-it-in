@@ -87,4 +87,16 @@
       }
     }
   }
+
+  .edit {
+    .edit-block {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 300px;
+        margin: 20px;
+      }
+    }
+  }
 }

@@ -72,7 +72,9 @@ const Navbar = () => {
 				<Link to={`/${userId}/profile/`}>
 					<h5>Profile</h5>
 				</Link>
-				<h5>Setting</h5>
+				<Link to={`/${userId}/profile/setting`}>
+					<h5>Setting</h5>
+				</Link>
 				<Link to={`/`}>
 					<p onClick={() => handleLogOut()}>Log Out</p>
 				</Link>

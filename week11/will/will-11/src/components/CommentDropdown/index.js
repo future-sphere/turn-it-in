@@ -13,7 +13,7 @@ const CommentDropdown = ({ j }) => {
 	const fetchUserInfo = async userId => {
 		try {
 			const findUserByIdData = await UserService.findUserById(userId);
-			console.log(findUserByIdData);
+			// console.log(findUserByIdData);
 			if (findUserByIdData.data.success) {
 				setCommentUser(findUserByIdData.data.data);
 			}

@@ -15,10 +15,9 @@ const Comment = ({ v, currentUser, match }) => {
 	const [postComments, setPostComments] = useState([]);
 	const [commentData, setCommentData] = useState('');
 	const [currentUsers, setCurrentUsers] = useState([]);
-
 	useEffect(() => {
 		fetchComments(v._id);
-	}, [v]);
+	}, []);
 
 	useEffect(() => {
 		fetchUserInfo(v.authorId);
@@ -168,7 +167,7 @@ const Comment = ({ v, currentUser, match }) => {
 							<img src={user.avatar} alt='pic' />
 							<input
 								onChange={e => setCommentData(e.target.value)}
-								onKeyDown={e => createComment(e, v._id, userId, commentData)}
+								onKeyDown={e => createComment(e, userId, v._id, commentData)}
 								value={commentData}
 								placeholder='Write a comment..'
 								type='text'

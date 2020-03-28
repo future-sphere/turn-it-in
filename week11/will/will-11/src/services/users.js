@@ -66,8 +66,17 @@ const findStrangerByUserId = (userId, page) => {
 const searchFriendByUser = () => {
 	return axios.get(`${url}/users/search/byUser`);
 };
-const profileUpdate = () => {
-	return axios.post(`${url}/users/update/email`);
+const profileUpdate = (id, key, value) => {
+	return axios.post(
+		`${url}/users/update/${key}/${value}?userId=${id}`,
+		console.log(`${url}/users/update/${key}/${value}?userId=${id}`),
+
+		{
+			headers: {
+				authorization: `Bearer ${token}`,
+			},
+		},
+	);
 };
 const uploadProfilePicture = file => {
 	return axios.post(`${url}/users/images`, file);
