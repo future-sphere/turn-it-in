@@ -11,14 +11,25 @@ const Content = ({
 	handleMoveTodoRight,
 	handleMoveTodoLeft,
 	handleCompleted,
+	handleClickEditTodo,
 	handleEnterInput,
 	input,
+	handleTitleInputValueChange,
+	enterTitleChange,
 }) => {
 	return (
 		<div className='content'>
 			{todoLists.map((v, i) => (
 				<div key={i} className='list-container'>
-					<Title title={v.title} />
+					{v.isEdit ? (
+						<input
+							value={v.titleInputValue}
+							onChange={e => handleTitleInputValueChange(e, i)}
+							onKeyDown={enterTitleChange}
+						/>
+					) : (
+						<Title title={v.title} />
+					)}
 					<List
 						todos={v.todos}
 						handleDelete={handleDelete}
@@ -26,6 +37,7 @@ const Content = ({
 						handleMoveTodoRight={handleMoveTodoRight}
 						handleMoveTodoLeft={handleMoveTodoLeft}
 						handleCompleted={handleCompleted}
+						handleClickEditTodo={handleClickEditTodo}
 					/>
 					<Form
 						input={input[i]}

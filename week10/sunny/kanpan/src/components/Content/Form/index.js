@@ -4,7 +4,7 @@ import './index.css';
 const Form = ({ handleInputChange, input, handleEnterInput, columnIndex }) => {
 	return (
 		<form onSubmit={e => e.preventDefault()}>
-			{/* from自带默认刷新，用以上方法（既定事实）来停止刷新 */}
+			{/* form自带默认刷新，用以上方法（既定事实）来停止刷新 */}
 			<input
 				type='text'
 				value={input}

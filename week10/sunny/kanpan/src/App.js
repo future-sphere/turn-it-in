@@ -6,37 +6,49 @@ import './App.css';
 const initialTodoLists = [
 	{
 		title: 'Backlog',
+		isEdit: false,
+		titleInputValue: '',
 		todos: [
 			{
 				text: 'Eat',
 				isComplete: false,
+				isEdit: false,
 			},
 		],
 	},
 	{
 		title: 'In Progress',
+		isEdit: false,
+		titleInputValue: '',
 		todos: [
 			{
 				text: 'Sleep',
 				isComplete: false,
+				isEdit: false,
 			},
 		],
 	},
 	{
 		title: 'Review',
+		isEdit: false,
+		titleInputValue: '',
 		todos: [
 			{
 				text: 'Code',
 				isComplete: false,
+				isEdit: false,
 			},
 		],
 	},
 	{
 		title: 'Done',
+		isEdit: false,
+		titleInputValue: '',
 		todos: [
 			{
 				text: 'Have Fun',
 				isComplete: false,
+				isEdit: false,
 			},
 		],
 	},
@@ -47,6 +59,24 @@ const initialInputs = ['', '', '', ''];
 function App() {
 	const [todoLists, setTodoLists] = useState(initialTodoLists);
 	const [input, setInput] = useState(initialInputs);
+	const [tab, setTab] = useState('');
+
+	const handleTabInputChange = e => {
+		setTab(e.target.value);
+	};
+
+	const handleTabEnterInput = event => {
+		if (event.keyCode === 13) {
+			const newTodoLists = [...todoLists];
+			const newTab = [...tab];
+			newTodoLists.push({
+				title: newTab,
+				todos: [],
+			});
+			setTab('');
+			setTodoLists(newTodoLists);
+		}
+	};
 
 	const handleClearALL = () => {
 		const newTodoLists = todoLists.map(v => {
@@ -59,6 +89,18 @@ function App() {
 		});
 		setTodoLists(newTodoLists);
 		//用新数据（newTodoLists）覆盖掉原有数据(todoLists)
+	};
+
+	const handleTitleInputValueChange = (e, i) => {
+		const newTodoLists = [...todoLists];
+		newTodoLists[i].titleInputValue = e.target.value;
+		setTodoLists(newTodoLists);
+	};
+
+	const enterTitleChange = (event, i) => {
+		if (event.keyCode === 13) {
+			handleTitleInputValueChange();
+		}
 	};
 
 	const handleDelete = (todoIndex, columnIndex) => {
@@ -123,9 +165,27 @@ function App() {
 		setTodoLists(newTodoLists);
 	};
 
+	const handleClickEditTodo = (todoIndex, columnIndex) => {
+		const newTodoLists = [...todoLists];
+		newTodoLists[columnIndex].todos[todoIndex].isEdit = true;
+		setTodoLists(newTodoLists);
+
+		// isEdit : input
+		// enter to save
+	};
+
 	return (
 		<div className='App'>
 			<Nav />
+			<div className='content-input'>
+				<i class='far fa-plus-square'></i>
+				<input
+					type='text'
+					value={tab}
+					placeholder='New List...'
+					onChange={e => handleTabInputChange(e)}
+				/>
+			</div>
 			<div className='content-button'>
 				<button onClick={handleClearALL} className='clear'>
 					Clear All
@@ -138,8 +198,11 @@ function App() {
 				handleMoveTodoRight={handleMoveTodoRight}
 				handleMoveTodoLeft={handleMoveTodoLeft}
 				handleCompleted={handleCompleted}
+				handleClickEditTodo={handleClickEditTodo}
 				handleInputChange={handleInputChange}
 				handleEnterInput={handleEnterInput}
+				handleTitleInputValueChange={handleTitleInputValueChange}
+				enterTitleChange={enterTitleChange}
 			/>
 		</div>
 	);

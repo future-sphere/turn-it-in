@@ -9,13 +9,16 @@ const List = ({
 	handleMoveTodoRight,
 	handleMoveTodoLeft,
 	handleCompleted,
+	handleClickEditTodo,
 }) => {
 	return (
 		<div className='list'>
 			{todos.map((v, i) => (
 				<div key={i} className={v.isComplete ? 'completed' : 'todo-wrapper'}>
 					<div className='todo-top'>
-						<p>{v.text}</p>
+						<p onClick={() => handleClickEditTodo(i, columnIndex)}>
+							{v.isEdit ? <input type='text' /> : <p>{v.text}</p>}
+						</p>
 						<div className='todo-button'>
 							<button onClick={() => handleCompleted(i, columnIndex)}>
 								{v.isComplete ? (
