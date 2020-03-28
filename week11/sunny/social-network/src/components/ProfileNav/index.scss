@@ -1,0 +1,51 @@
+.profile-nav {
+	.heading {
+		height: 368px;
+		width: 100%;
+		background: #1f8efa;
+		border-radius: 8px 8px 0px 0px;
+		position: relative;
+
+		h3 {
+			position: absolute;
+			left: 444px;
+			bottom: 15px;
+			font-weight: bold;
+			font-size: 36px;
+			color: #fff;
+		}
+		.profile-avatar {
+			position: relative;
+			top: 234px;
+			left: 208px;
+			height: 194px;
+			width: 194px;
+			background: #fff;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 194px;
+				height: 194px;
+			}
+		}
+	}
+
+	.profile-nav {
+		padding: 16px 0 44px 444px;
+
+		.link {
+			font-size: 24px;
+			margin-right: 78px;
+
+			&.active {
+				color: #1f8efa;
+			}
+		}
+		.link:hover {
+			color: #1f8efa;
+		}
+	}
+}
