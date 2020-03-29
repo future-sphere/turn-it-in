@@ -1,0 +1,58 @@
+.movie-category {
+	color: #ffffff;
+	padding-left: 60px;
+}
+
+.movie-category h4 {
+	font-size: 20px;
+	margin: 55px 0 10px 0;
+}
+
+.category-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.category-loop {
+	overflow-x: scroll;
+	display: flex;
+}
+
+.category {
+	height: 124px;
+	width: 204px;
+	font-size: 20px;
+	margin-right: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.red {
+	background-color: #fd5183;
+}
+
+.orange {
+	background-color: #ffc852;
+}
+
+.blue {
+	background-color: #81a7fc;
+}
+
+.purple {
+	background-color: #bf64ff;
+}
+
+.pink {
+	background-color: #fe7fd0;
+}
+
+.green {
+	background-color: #bfed5a;
+}
+
+.mint {
+	background-color: #5befd9;
+}

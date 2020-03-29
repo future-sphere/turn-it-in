@@ -1,0 +1,71 @@
+.banner-container {
+  background-image: url(../../assets/img/banner.jpg);
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+
+  .black-top {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+  }
+
+  .description-text-container {
+    width: 34%;
+    text-align: left;
+    padding: 80px 0px 30px 60px;
+
+    h4 {
+      font-size: 27px;
+      font-weight: 200;
+      margin-top: 0px;
+      margin-bottom: 12px;
+
+      strong {
+        margin-right: 8px;
+      }
+    }
+
+    .movie-name {
+      margin-top: 0px;
+      margin-bottom: 26px;
+
+      svg {
+        width: 344px;
+        height: 94px;
+      }
+    }
+
+    h5 {
+      font-size: 26px;
+      margin-top: 0px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 0px;
+    }
+  }
+
+  .description-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 60px;
+
+    button {
+      padding: 12px 36px;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+      font-size: 16px;
+      border-radius: 3px;
+      border: none;
+      color: #fff;
+      margin-bottom: 130px;
+
+      i {
+        font-size: 20px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
