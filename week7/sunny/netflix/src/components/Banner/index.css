@@ -1,0 +1,65 @@
+.background {
+	background-image: url(../../assets/images/hero.jpg);
+	background-size: cover;
+	width: 100%;
+	margin-top: 88px;
+}
+
+.movie-info-container {
+	color: #fff;
+	padding: 64px 58px 0 58px;
+	width: 35%;
+}
+
+.movie-description {
+	margin-bottom: 32px;
+}
+
+.brand {
+	font-size: 28px;
+	margin-bottom: 12px;
+}
+
+.title {
+	margin-bottom: 26px;
+}
+
+.title svg {
+	width: 344px;
+	height: 94px;
+}
+
+.sub-title {
+	font-size: 26px;
+	margin-bottom: 7px;
+}
+
+.description {
+	font-size: 20px;
+}
+
+.buttons {
+	display: flex;
+	margin-bottom: 104px;
+}
+
+button {
+	font-size: 16px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.32);
+	padding: 10px 36px;
+	border: none;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+
+button svg {
+	margin-right: 10px;
+}
+
+.footer {
+	font-size: 20px;
+}

@@ -1,0 +1,31 @@
+section {
+	width: 100%;
+	padding: 0 0 55px 60px;
+}
+
+.movie-warp {
+	width: 100%;
+	overflow: hidden;
+}
+
+.movie-loop {
+	display: flex;
+	overflow-x: scroll;
+}
+
+.movie-loop img {
+	height: 124px;
+	margin-right: 5px;
+}
+
+.movie-loop img:hover {
+	height: 150px;
+	transition-duration: 1s;
+}
+
+.sub {
+	margin: 55px 0 10px 0;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+}

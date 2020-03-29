@@ -1,0 +1,50 @@
+footer {
+	padding: 125px 0 60px 164px;
+	color: #999999;
+}
+
+.footer-icon {
+}
+
+.footer-icon i {
+	padding-right: 24px;
+	font-size: 25px;
+}
+
+.footer-source {
+	display: flex;
+}
+
+.source {
+	display: flex;
+	flex-direction: column;
+	margin-top: 8px;
+}
+
+.source a {
+	padding: 14px 124px 0 0;
+	text-decoration: none;
+	color: #999999;
+	font-size: 14px;
+}
+
+.source a:hover {
+	color: #ffffff;
+}
+
+.footer-service {
+	border: 1px solid #999999;
+	display: inline-block;
+	margin-top: 29px;
+	margin-bottom: 20px;
+}
+
+.footer-service p {
+	font-size: 13px;
+	padding: 8px 6px;
+	margin: 0;
+}
+
+.copy-right {
+	font-size: 11px;
+}
