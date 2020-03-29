@@ -1,0 +1,44 @@
+* {
+	font-family: 'Trade Winds', cursive;
+}
+
+.App {
+	background-color: rgba(0, 0, 0, 0.9);
+	margin: 0px;
+}
+
+h1 {
+	margin: 0px;
+	text-align: center;
+	font-size: 56px;
+	padding: 15px;
+	color: #eec35d;
+	letter-spacing: 2px;
+	text-shadow: -5px 0 #003300, 0 5px #003300, 10px -5px #003300, 0 -5px #003300;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 20px;
+}
+
+.container img {
+	width: 100%;
+	height: auto;
+}
+
+.popup {
+	height: 60vh;
+	width: 70%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color: rgba(0, 0, 0, 0.8);
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.popup.active {
+	display: flex;
+}

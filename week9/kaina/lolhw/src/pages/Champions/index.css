@@ -1,0 +1,59 @@
+.champion-wrapper {
+	background-color: black;
+	color: #fff;
+}
+
+.champion-wrapper h2 {
+	margin: 0px;
+	text-align: center;
+	font-size: 56px;
+	padding: 15px;
+}
+
+h2 a {
+	text-decoration: none;
+	color: #ac363f;
+	letter-spacing: 2px;
+	text-shadow: -3px 0 #eec35d, 0 3px #eec35d, 8px -3px #eec35d, 0 -8px #003300;
+}
+
+h2 a:hover {
+	color: #ac363f;
+	text-shadow: -5px 0 #eec35d, 0 5px #eec35d, 10px -5px #eec35d, 0 -8px #003300;
+}
+
+.champion-wrapper h3 {
+	padding-left: 180px;
+	font-size: 28px;
+	color: #003300;
+	text-shadow: -1px 0 #eec35d, 0 1px #eec35d, 0px -1px #eec35d, 0 -2px #eec35d;
+}
+
+.champion-wrapper p {
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: 600;
+	font-size: 24px;
+	background: -webkit-linear-gradient(#eec35d, #ac363f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+}
+
+.skins-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	grid-gap: 10px;
+}
+
+.skins-container img {
+	width: 100%;
+	height: auto;
+}
+
+.skins-container img:hover {
+	opacity: 0.6;
+}
