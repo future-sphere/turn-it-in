@@ -1,0 +1,37 @@
+.historyWindow {
+	height: 200px;
+	width: 350px;
+	background-color: #fff;
+	color: #000;
+	position: relative;
+	right: 2px;
+	border: 2px solid #ccc;
+	overflow: auto;
+	white-space: nowrap;
+	.listHistory {
+		height: 40px;
+		display: flex;
+		justify-content: space-between;
+		span {
+			padding: 5px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+		button {
+			background-color: blueviolet;
+			font-size: 10px;
+			color: #fff;
+		}
+	}
+}
+.clear__button {
+	position: relative;
+	right: 2px;
+	background-color: orange;
+	height: 50px;
+	width: 354px;
+	outline: none;
+	font-size: 20px;
+	font-weight: 900;
+}
