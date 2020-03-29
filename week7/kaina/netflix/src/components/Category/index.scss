@@ -1,0 +1,50 @@
+@import '../../style/colors.scss';
+
+.category-container {
+	width: 100%;
+	padding: 16px 0px 0px 60px;
+	position: relative;
+	top: -90px;
+
+	.category-box {
+		overflow: hidden;
+		width: 100%;
+
+		h3 {
+			font-size: 24px;
+			line-height: 24px;
+			color: $white;
+			margin: 0px;
+			margin-bottom: 10px;
+		}
+
+		.image {
+			display: flex;
+			margin-bottom: 55px;
+			overflow-x: scroll;
+
+			.image-box {
+				img {
+					width: 205px;
+					height: 125px;
+					background-color: #141414;
+					padding-right: 5px;
+				}
+				h3 {
+					font-size: 20px;
+					position: relative;
+					text-align: center;
+					bottom: 80px;
+				}
+
+				i {
+					color: $white;
+					display: flex;
+					justify-content: center;
+					position: relative;
+					bottom: 80px;
+				}
+			}
+		}
+	}
+}
