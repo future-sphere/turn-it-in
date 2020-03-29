@@ -1,0 +1,78 @@
+.friend {
+	background-color: #fff;
+	box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+	width: 100%;
+	margin-bottom: 30px;
+	border-radius: 6px;
+
+	h4 {
+		font-size: 16px;
+		color: #919bab;
+		padding: 24px 32px;
+		box-shadow: inset 0px -1px 0px #f5f7fa;
+		margin: 0;
+	}
+
+	.friend-list {
+		.friend-content {
+			.friend-box {
+				display: flex;
+				justify-content: space-between;
+				padding: 18px 28px;
+
+				.friend-info {
+					display: flex;
+
+					img {
+						width: 45px;
+						height: 45px;
+						margin-right: 18px;
+					}
+				}
+
+				.friend-add {
+					display: flex;
+					align-items: center;
+
+					button {
+						border-style: none;
+						background-color: transparent;
+						outline-style: none;
+					}
+
+					.delete-friend {
+						color: transparent;
+					}
+
+					.delete-friend:hover {
+						color: #000;
+					}
+
+					.added {
+						display: none;
+					}
+
+					.on {
+						display: block;
+					}
+
+					.off {
+						display: none;
+					}
+				}
+			}
+
+			.friend-box:hover {
+				background-color: #1f8efa;
+				box-shadow: 0px 6px 12px rgba(49, 127, 203, 0.32);
+			}
+		}
+		.page-number {
+			text-align: center;
+			padding: 18px;
+			span {
+				margin-right: 24px;
+			}
+		}
+	}
+}

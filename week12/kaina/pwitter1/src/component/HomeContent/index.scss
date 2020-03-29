@@ -1,0 +1,15 @@
+.content-wrapper {
+	max-width: 1024px;
+	margin: auto;
+
+	.content-container {
+		display: grid;
+		grid-template-columns: 30% 70%;
+		grid-gap: 40px;
+		margin-top: 32px;
+	}
+
+	.status-container {
+		width: 100%;
+	}
+}

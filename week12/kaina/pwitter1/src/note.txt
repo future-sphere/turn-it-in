@@ -1,0 +1,9 @@
+1. Login
+  - token
+2. save token to brower - local storage
+  -local storage
+  -session storage
+3. get current user
+  - verify by token
+  - get user info
+4. redirected to home page ( with correct user)
