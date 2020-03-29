@@ -5,34 +5,69 @@ import ChatWindow from './components/ChatWindow';
 import Searchbar from './components/Searchbar';
 import Navbar from './components/Searchbar';
 import BackgroundImg from './images/bg.jpg';
-import Groups from './services/groups.json';
-import Users from './services/users.json';
+import Groups from './constants/groups.json';
+import Users from './constants/users.json';
 
 class App extends React.Component {
 	state = {
-		groups: { Groups },
-		users: { Users },
-		input: '',
-		currentUser: {},
+		groups: Groups,
+		users: Users,
+		searchinput: '',
+		chatinput: '',
+		currentUserId: '',
+		currentUserChats: [],
+		unread:[],
 		isUsersLoginOpen: true,
 		isChatwindowOpen: false,
 		isGroupSelected: false,
 		isMenuSelected: false,
 	};
 
-	changeInput = e => {
+	changeChatInput = e => {
 		this.setState({
 			...this.state,
-			input: e.target.value,
+			chatinput: e.target.value,
+		});
+	};
+
+	changeSearchInput = e => {
+		this.setState({
+			...this.state,
+			searchinput: e.target.value,
 		});
 	};
 
 	defaultChooseUser = index => {
 		const user = this.state.users[index];
+		const currentUserChats = [];
+		const groups = this.state.groups;
+		for (i = 0; i < groups.length; i++) {
+			if (groups[i].members.includes[user.id]) {
+				currentUserChats.push(groups[i]);
+			}
+		}
 		this.setState({
 			...this.state,
-			currentUser: user,
+			currentUserId: user.id,
+			currentUserChats,
 			isUsersLoginOpen: false,
+		});
+	};
+
+	reorderChats = index => {
+		const currentUserChats = this.state.currentUserChats;
+		currentUserChats[index].conversations.sort((a, b) =>
+			a.sendTime - b.sendTime ? 1 : -1,
+		);
+		currentUserChats.sort((a, b) =>
+			a.conversations[a.conversations.length - 1].sendTime -
+			b.conversations.[b.conversations.length-1].sendTime
+				? 1
+				: -1,
+		);
+		this.setState({
+			...this.state,
+			currentUserChats,
 		});
 	};
 
@@ -43,18 +78,11 @@ class App extends React.Component {
 		});
 	};
 
-	menuSelection = () => {
-		this.setState({
-			...this.state,
-			isMenuSelected: true,
-		});
-	};
+	unreadGroupMessage = () => {
+		const currentUserChats=this.state.currentUserChats;
+		const unread=this.state.unread;
+};
 
-	// componentDidMount = () => {
-	// 	const groups = this.state.groups;
-	// 	console.log(groups);
-	// 	console.log(groups.Groups);
-	// };
 
 	render() {
 		return (
@@ -62,9 +90,11 @@ class App extends React.Component {
 				<img src={BackgroundImg} alt='background image' />
 				<div className='container'>
 					<Navbar />
-					<Searchbar />
-					<ChatGroup />
-					<ChatWindow />
+					<div>
+						<Searchbar />
+						<ChatGroup />
+						<ChatWindow />
+					</div>
 				</div>
 			</div>
 		);

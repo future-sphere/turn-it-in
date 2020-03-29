@@ -1,0 +1,31 @@
+@import '../../style/colors.scss';
+
+.poster-container {
+	width: 100%;
+	padding: 0px 60px;
+	position: relative;
+	bottom: 105px;
+
+	.poster-box {
+		width: 100%;
+
+		h3 {
+			font-size: 20px;
+			line-height: 23px;
+			color: $white;
+			margin: 0px;
+			margin-bottom: 10px;
+		}
+
+		.image-box {
+			display: flex;
+			margin-bottom: 55px;
+			overflow-x: scroll;
+
+			img {
+				background-color: #141414;
+				padding-right: 5px;
+			}
+		}
+	}
+}
