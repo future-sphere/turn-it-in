@@ -18,8 +18,6 @@ class App extends Component {
 		],
 	};
 
-
-
 	handleTodoClassNameToggle = i => {
 		const todos = this.state.todos;
 		todos[i].isActive = !todos[i].isActive;
@@ -37,7 +35,10 @@ class App extends Component {
 		if (this.state.data === '') {
 			alert('you cant push empty string mofo');
 		} else {
-			todos.push(this.state.data);
+			todos.push({
+				text: this.state.data,
+				isActive: false,
+			});
 			this.setState({
 				todos: todos,
 				data: '',
