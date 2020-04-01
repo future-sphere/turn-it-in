@@ -1,0 +1,22 @@
+.movie-poster {
+	padding-left: 60px;
+}
+
+.subtitle {
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0 0 12px 0;
+}
+
+.poster-wrap {
+	overflow: hidden;
+}
+
+.poster-loop {
+	overflow-x: scroll;
+	display: flex;
+}
+
+.poster-loop img {
+	margin-right: 3px;
+}
