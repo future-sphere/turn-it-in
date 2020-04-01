@@ -1,0 +1,25 @@
+.form {
+	height: 70px;
+	position: relative;
+	border-top: 2px solid #ccc;
+	input {
+		position: absolute;
+		padding-left: 15px;
+		outline: none;
+		border: none;
+		left: 0;
+		width: 250px;
+		height: 64px;
+		font-size: 30px;
+	}
+	button {
+		position: absolute;
+		outline: none;
+		top: 0px;
+		right: -2px;
+		background-color: orange;
+		width: 74px;
+		height: 72px;
+		font-size: 20px;
+	}
+}

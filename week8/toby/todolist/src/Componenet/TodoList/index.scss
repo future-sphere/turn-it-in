@@ -1,0 +1,33 @@
+.list {
+	display: block;
+	height: 400px;
+	color: #000;
+	overflow: auto;
+	white-space: nowrap;
+	background-color: #fff;
+	.list__container {
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		transition-duration: 0.5s;
+		span {
+			height: 50px;
+			padding-left: 15px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			font-size: 30px;
+			overflow: auto;
+			white-space: nowrap;
+		}
+		&:hover {
+			background-color: yellow;
+		}
+		button {
+			width: 50px;
+			background-color: yellowgreen;
+			outline: none;
+			font-size: 30px;
+		}
+	}
+}
