@@ -2,12 +2,22 @@ import React, { useState, useEffect } from 'react';
 import './index.scss';
 import classnames from 'classnames';
 import UsersService from '../../service/users';
+import ReactDOM from 'react-dom';
 
 const List = ({ todos }) => {
-	const deleteTodo = async (id, todo) => {
+	const [todo, setTodo] = useState(todos);
+
+	useEffect(() => {
+		setTodo(todos);
+	}, [todos]);
+
+	const deleteTodo = async i => {
 		try {
-			const removeTodoResult = await UsersService.removeTodo(id, todo);
+			const removeTodoResult = await UsersService.removeTodo(todos[i]._id);
 			if (removeTodoResult.data.success) {
+				const newTodo = [...todo];
+				newTodo.splice(i, 1);
+				setTodo(newTodo);
 				alert('Deleted');
 			}
 		} catch (error) {
@@ -15,14 +25,17 @@ const List = ({ todos }) => {
 		}
 	};
 
-	const finishTodo = async (id, todo, isFinished) => {
+	const finishTodo = async i => {
 		try {
 			const finishTodoResult = await UsersService.finishTodo(
-				id,
-				todo,
-				isFinished,
+				todos[i]._id,
+				todos[i].todo,
+				todos[i].isFinished,
 			);
 			if (finishTodoResult.data.success) {
+				const newTodo = [...todo];
+				newTodo[i].isFinished = true;
+				setTodo(newTodo);
 				alert('Finished');
 			}
 		} catch (error) {
@@ -34,15 +47,15 @@ const List = ({ todos }) => {
 		<div className='list-container'>
 			<h2>To &thinsp;Do &thinsp;List</h2>
 			<div className='list-block'>
-				{todos &&
-					todos.map(v => (
+				{todo &&
+					todo.map((v, i) => (
 						<div className='list'>
 							<div>
-								<button onClick={() => finishTodo(v._id, v.todo, v.isFinished)}>
+								<button onClick={() => finishTodo(i)}>
 									<i class='fas fa-check-circle'></i>
 								</button>
 								<span className={v.isFinished ? 'color' : ''}>{v.todo}</span>
-								<button onClick={() => deleteTodo(v._id, v.todo)}>
+								<button onClick={() => deleteTodo(i)}>
 									<i class='fas fa-times-circle'></i>
 								</button>
 							</div>
