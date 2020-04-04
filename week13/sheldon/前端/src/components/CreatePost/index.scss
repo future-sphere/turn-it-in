@@ -1,0 +1,93 @@
+.createpost-container {
+	max-width: 705px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 6px;
+	margin-bottom: 30px;
+	.createpost-wraper {
+		padding: 20px;
+		border-bottom: 1px solid #f5f7fa;
+	}
+	.createpost-status {
+		padding: 6px 12px;
+		font-weight: 500;
+		font-size: 14px;
+		border-radius: 100px;
+		background-color: #f0f3f8;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	.createpost-status:hover {
+		background-color: #1f8efa;
+		color: #fff;
+	}
+	.createpost-input {
+		display: flex;
+		align-items: center;
+
+		img {
+			height: 37px;
+			width: 37px;
+			margin-right: 14px;
+		}
+		input {
+			border: none;
+			font-size: 14px;
+			padding: 9px;
+			width: 100%;
+			outline: none;
+		}
+	}
+	.createpost-post {
+		padding: 12px 13px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 500;
+		font-size: 14px;
+		.createpost-post-mood {
+			padding: 10px;
+			cursor: default;
+			display: flex;
+			align-items: center;
+			&:hover {
+				color: #1f8efa;
+			}
+			img {
+				margin-right: 8px;
+			}
+		}
+		button {
+			padding: 10px 31px;
+			font-weight: 500;
+			font-size: 14px;
+			border: none;
+			border-radius: 4px;
+			background-color: #1f8efa;
+			color: #fff;
+			outline: none;
+		}
+		button:hover {
+			background-color: #1967b6;
+		}
+	}
+	.mood-dropdown {
+		position: absolute;
+		display: inline-block;
+		flex-direction: column;
+		z-index: 1;
+		span {
+			display: block;
+			padding: 8px 12px;
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #fff;
+			&:hover {
+				color: #fff;
+				background-color: #1f8efa;
+			}
+			&:last-of-type {
+				border: none;
+			}
+		}
+	}
+}
