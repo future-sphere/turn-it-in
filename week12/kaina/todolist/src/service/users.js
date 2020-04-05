@@ -15,7 +15,7 @@ const addNewTodo = todos => {
 	return axios.post(`${url}/users/create/todo`, { todos });
 };
 
-//-------------- create new list -------------------
+//-------------- remove new list -------------------
 const removeTodo = (id, todos) => {
 	return axios.post(`${url}/users/remove/todo`, { id, todos });
 };
