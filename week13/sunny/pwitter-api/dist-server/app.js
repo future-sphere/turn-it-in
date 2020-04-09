@@ -21,6 +21,8 @@ var _posts = _interopRequireDefault(require("./routes/posts"));
 
 var _auth = _interopRequireDefault(require("./routes/auth"));
 
+var _upload = _interopRequireDefault(require("./routes/upload"));
+
 var _db = _interopRequireDefault(require("./db"));
 
 var _jwt = _interopRequireDefault(require("./helpers/jwt"));
@@ -36,11 +38,13 @@ app.use(_express.default.urlencoded({
   extended: false
 }));
 app.use((0, _cookieParser.default)());
+app.use('/images', _express.default.static(__dirname + '/images'));
 app.use('/', _index.default);
 app.use('/auth', _auth.default); // guard, ask for token
 
 app.use(_jwt.default);
 app.use('/users', _users.default);
 app.use('/posts', _posts.default);
+app.use('/upload', _upload.default);
 var _default = app;
 exports.default = _default;

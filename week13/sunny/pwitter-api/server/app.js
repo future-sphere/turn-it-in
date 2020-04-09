@@ -7,6 +7,7 @@ import indexRouter from './routes/index';
 import usersRouter from './routes/users';
 import postsRouter from './routes/posts';
 import authRouter from './routes/auth';
+import uploadRouter from './routes/upload';
 import connectToDatabase from './db';
 import guard from './helpers/jwt';
 
@@ -17,6 +18,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/images', express.static(__dirname + '/images'));
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
@@ -24,5 +26,6 @@ app.use('/auth', authRouter);
 app.use(guard);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
+app.use('/upload', uploadRouter);
 
 export default app;

@@ -69,18 +69,11 @@ const findFriendByUserId = async (data) => {
 	const { userId, page } = data;
 	try {
 		const currUser = await Users.findById(userId);
-		if (user.friends.length > 0) {
-			const friendsData = await Users.find({ _id: { $in: currUser.friends } });
-			return {
-				data: paginate(friendsData, page),
-				success: true,
-			};
-		} else {
-			return {
-				data: [],
-				success: true,
-			};
-		}
+		const friendsData = await Users.find({ _id: { $in: currUser.friends } });
+		return {
+			data: paginate(friendsData, page),
+			success: true,
+		};
 	} catch (error) {
 		return {
 			data: error.message,
@@ -89,17 +82,21 @@ const findFriendByUserId = async (data) => {
 	}
 };
 
-const findStrangerByUserId = async ({ userId }) => {
+const findStrangerByUserId = async (data) => {
+	const { userId, page } = data;
 	try {
-		if (userId) {
-			// if userId === userId,....
-			const currUser = await Users.findById(userId);
-			return await Users.find({ _id: { $nin: currUser.friends } });
-		} else {
-			throw 'You do not have an user ID';
-		}
+		// if userId === userId,....
+		const currUser = await Users.findById(userId);
+		const strangersData = await Users.find({ _id: { $nin: currUser.friends } });
+		return {
+			data: paginate(strangersData, page),
+			success: true,
+		};
 	} catch (error) {
-		throw error;
+		return {
+			data: error.message,
+			success: false,
+		};
 	}
 };
 

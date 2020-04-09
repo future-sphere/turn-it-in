@@ -44,11 +44,10 @@ var addFriend = /*#__PURE__*/function () {
       if (userId === friendId) throw 'You cannot add yourself as friend';
 
       if (userId && friendId) {
-        var _user = yield _User.default.findById(userId);
-
+        var user = yield _User.default.findById(userId);
         var friend = yield _User.default.findById(friendId);
 
-        if (_user.friends.includes(friendId)) {
+        if (user.friends.includes(friendId)) {
           throw 'You are already friends with this user';
         }
 
@@ -84,11 +83,10 @@ var deleteFriend = /*#__PURE__*/function () {
       if (userId === friendId) throw 'You cannot delete yourself';
 
       if (userId && friendId) {
-        var _user2 = yield _User.default.findById(userId);
-
+        var user = yield _User.default.findById(userId);
         var friend = yield _User.default.findById(friendId);
 
-        if (_user2.friends.includes(friendId)) {
+        if (user.friends.includes(friendId)) {
           yield _User.default.findByIdAndUpdate(userId, {
             $pull: {
               friends: friendId
@@ -124,23 +122,15 @@ var findFriendByUserId = /*#__PURE__*/function () {
 
     try {
       var currUser = yield _User.default.findById(userId);
-
-      if (user.friends.length > 0) {
-        var friendsData = yield _User.default.find({
-          _id: {
-            $in: currUser.friends
-          }
-        });
-        return {
-          data: (0, _paginate.default)(friendsData, page),
-          success: true
-        };
-      } else {
-        return {
-          data: [],
-          success: true
-        };
-      }
+      var friendsData = yield _User.default.find({
+        _id: {
+          $in: currUser.friends
+        }
+      });
+      return {
+        data: (0, _paginate.default)(friendsData, page),
+        success: true
+      };
     } catch (error) {
       return {
         data: error.message,
@@ -155,25 +145,29 @@ var findFriendByUserId = /*#__PURE__*/function () {
 }();
 
 var findStrangerByUserId = /*#__PURE__*/function () {
-  var _ref7 = _asyncToGenerator(function* (_ref8) {
+  var _ref7 = _asyncToGenerator(function* (data) {
     var {
-      userId
-    } = _ref8;
+      userId,
+      page
+    } = data;
 
     try {
-      if (userId) {
-        // if userId === userId,....
-        var currUser = yield _User.default.findById(userId);
-        return yield _User.default.find({
-          _id: {
-            $nin: currUser.friends
-          }
-        });
-      } else {
-        throw 'You do not have an user ID';
-      }
+      // if userId === userId,....
+      var currUser = yield _User.default.findById(userId);
+      var strangersData = yield _User.default.find({
+        _id: {
+          $nin: currUser.friends
+        }
+      });
+      return {
+        data: (0, _paginate.default)(strangersData, page),
+        success: true
+      };
     } catch (error) {
-      throw error;
+      return {
+        data: error.message,
+        success: false
+      };
     }
   });
 
@@ -187,7 +181,7 @@ var findUserById = userId => {
 };
 
 var getCurrentUserByToken = /*#__PURE__*/function () {
-  var _ref9 = _asyncToGenerator(function* (token) {
+  var _ref8 = _asyncToGenerator(function* (token) {
     try {
       var id = yield _jsonwebtoken.default.verify(token, jwtSecret);
       console.log(id);
@@ -202,12 +196,12 @@ var getCurrentUserByToken = /*#__PURE__*/function () {
   });
 
   return function getCurrentUserByToken(_x5) {
-    return _ref9.apply(this, arguments);
+    return _ref8.apply(this, arguments);
   };
 }();
 
 var updateProfile = /*#__PURE__*/function () {
-  var _ref10 = _asyncToGenerator(function* (data) {
+  var _ref9 = _asyncToGenerator(function* (data) {
     var {
       field,
       value,
@@ -243,7 +237,7 @@ var updateProfile = /*#__PURE__*/function () {
   });
 
   return function updateProfile(_x6) {
-    return _ref10.apply(this, arguments);
+    return _ref9.apply(this, arguments);
   };
 }();
 

@@ -18,7 +18,7 @@ var debug = (0, _debug.default)('pwitter:server');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3011');
+var port = normalizePort(process.env.PORT || '3010');
 
 _app.default.set('port', port);
 /**
