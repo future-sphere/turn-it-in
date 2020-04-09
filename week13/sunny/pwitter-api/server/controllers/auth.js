@@ -5,9 +5,9 @@ require('dotenv').config();
 
 const jwtSecret = process.env.JWT_SECRET;
 
-const verifyToken = token => jwt.verify(token, jwtSecret);
+const verifyToken = (token) => jwt.verify(token, jwtSecret);
 
-const register = async data => {
+const register = async (data) => {
 	const { firstName, lastName, age, email, phone, password, friends } = data;
 	try {
 		const existed = await Users.findOne({ email });
@@ -25,7 +25,7 @@ const register = async data => {
 	}
 };
 
-const handleLogin = async data => {
+const handleLogin = async (data) => {
 	const { email, password } = data;
 	if (email && password) {
 		try {

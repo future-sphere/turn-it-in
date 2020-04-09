@@ -87,10 +87,10 @@ router.delete('/friends', /*#__PURE__*/function () {
 router.get('/friends', /*#__PURE__*/function () {
   var _ref4 = _asyncToGenerator(function* (req, res) {
     try {
-      var usersInfo = yield _users.default.findFriendByUserId(req.query);
+      var data = yield _users.default.findFriendByUserId(req.query);
       res.json({
         success: true,
-        usersInfo
+        data
       });
     } catch (error) {
       res.json({

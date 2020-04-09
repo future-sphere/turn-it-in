@@ -1,24 +1,22 @@
-const itemsPerPage = 5;
-
-const paginate = (data, page) => {
-  page = +page;
-  const result = {
-    total: data.length,
-    page,
-  };
-  if (data.length < itemsPerPage) {
-    return {
-      data,
-      ...result,
-    };
-  } else {
-    const skip = page * itemsPerPage;
-    const paged = data.slice(skip, skip + 10 > data.length - 1 ? data.length - 1 : skip + 10);
-    return {
-      data: paged,
-      ...result,
-    };
-  }
+const paginate = (input, page) => {
+	const itemsPerPage = 5;
+	const maxPage = Math.ceil(input.length / itemsPerPage);
+	if (input.length < itemsPerPage) {
+		return {
+			data: input,
+			maxPage,
+		};
+	} else {
+		const skip = (page - 1) * itemsPerPage;
+		const paged = input.slice(
+			skip,
+			skip + itemsPerPage > input.length ? input.length : skip + itemsPerPage,
+		);
+		return {
+			data: paged,
+			maxPage,
+		};
+	}
 };
 
 export default paginate;

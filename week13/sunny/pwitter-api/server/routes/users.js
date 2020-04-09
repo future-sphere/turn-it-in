@@ -44,10 +44,10 @@ router.delete('/friends', async (req, res) => {
 
 router.get('/friends', async (req, res) => {
 	try {
-		const usersInfo = await UserController.findFriendByUserId(req.query);
+		const data = await UserController.findFriendByUserId(req.query);
 		res.json({
 			success: true,
-			usersInfo,
+			data,
 		});
 	} catch (error) {
 		res.json({

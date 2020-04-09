@@ -65,16 +65,27 @@ const deleteFriend = async ({ userId, friendId }) => {
 	}
 };
 
-const findFriendByUserId = async ({ userId }) => {
+const findFriendByUserId = async (data) => {
+	const { userId, page } = data;
 	try {
-		if (userId) {
-			const currUser = await Users.findById(userId);
-			return await Users.find({ _id: { $in: currUser.friends } });
+		const currUser = await Users.findById(userId);
+		if (user.friends.length > 0) {
+			const friendsData = await Users.find({ _id: { $in: currUser.friends } });
+			return {
+				data: paginate(friendsData, page),
+				success: true,
+			};
 		} else {
-			throw 'You do not have an user ID';
+			return {
+				data: [],
+				success: true,
+			};
 		}
 	} catch (error) {
-		throw error;
+		return {
+			data: error.message,
+			success: false,
+		};
 	}
 };
 
