@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './index.scss';
-import UsersService from '../../service/users';
+import TodosService from '../../service/todos';
 
 const TodoList = ({}) => {
-	const [todos, setTodos] = useState([]); //todo list
-	const [input, setInput] = useState(''); // entered todo
-	const [value, setValue] = useState(''); //new todo
+	const [todos, setTodos] = useState([]);
+	const [input, setInput] = useState('');
+	const [value, setValue] = useState('');
 
-	const enterNewTodo = async input => {
+	const enterNewTodo = async (input) => {
 		try {
-			const newTodo = await UsersService.addNewTodo(input);
+			const newTodo = await TodosService.addNewTodo(input);
 			if (newTodo.data.success) {
+				todos.push({ todos: value });
+				console.log(value);
+				console.log(todos);
 				alert('New todo added');
 				setValue('');
 			}
@@ -19,11 +22,13 @@ const TodoList = ({}) => {
 		}
 	};
 
-	const deleteTodo = async (id, input) => {
+	const deleteTodo = async (id, input, i) => {
 		try {
-			const deleteInput = await UsersService.removeTodo(id, input);
-			console.log(deleteInput);
+			const deleteInput = await TodosService.removeTodo(id, input);
 			if (deleteInput.data.success) {
+				const newTodos = [...todos];
+				newTodos.splice(i, 1);
+				setTodos(newTodos);
 				alert('Todo removed');
 			}
 		} catch (error) {
@@ -34,7 +39,7 @@ const TodoList = ({}) => {
 	useEffect(() => {
 		const fetchTodo = async () => {
 			try {
-				const todoList = await UsersService.fetchAllTodo();
+				const todoList = await TodosService.fetchAllTodo();
 				if (todoList.data.success) {
 					setTodos(todoList.data.data);
 				}
@@ -45,8 +50,6 @@ const TodoList = ({}) => {
 		fetchTodo();
 	}, []);
 
-	console.log(value);
-
 	return (
 		<div className='form-container'>
 			<div className='todolist'>
@@ -55,12 +58,12 @@ const TodoList = ({}) => {
 				</div>
 				<div className='form-box '>
 					<div className='todo'>
-						{todos.map(v => (
+						{todos.map((v, i) => (
 							<div className='input-todo'>
 								<div className='text-box'>
 									<span>{v.todos}</span>
 								</div>
-								<button onClick={() => deleteTodo(v._id, v.todos)}>
+								<button onClick={() => deleteTodo(v._id, v.todos, i)}>
 									<i class='fas fa-times'></i>
 								</button>
 							</div>
@@ -70,7 +73,7 @@ const TodoList = ({}) => {
 				<div className='submit-box'>
 					<input
 						value={value}
-						onChange={e => setValue(e.target.value)}
+						onChange={(e) => setValue(e.target.value)}
 						type='text'
 						placeholder='Plan for today'
 					/>

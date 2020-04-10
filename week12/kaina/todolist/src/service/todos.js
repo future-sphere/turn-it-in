@@ -2,22 +2,18 @@ import axios from 'axios';
 
 const url = 'http://localhost:3006';
 
-// const id = window.localStorage.setItem('userId' id);
-
 const fetchAllTodo = () => {
-	return axios.get(`${url}/users/fetch`);
+	return axios.get(`${url}/todos/fetch`);
 };
 
-console.log(url);
-
 //-------------- create new list -------------------
-const addNewTodo = todos => {
-	return axios.post(`${url}/users/create/todo`, { todos });
+const addNewTodo = (todos) => {
+	return axios.post(`${url}/todos`, { todos });
 };
 
 //-------------- remove new list -------------------
 const removeTodo = (id, todos) => {
-	return axios.post(`${url}/users/remove/todo`, { id, todos });
+	return axios.post(`${url}/todos/remove`, { id, todos });
 };
 
 const UsersService = {
