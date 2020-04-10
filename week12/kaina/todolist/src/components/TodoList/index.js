@@ -12,9 +12,6 @@ const TodoList = ({}) => {
 			const newTodo = await TodosService.addNewTodo(input);
 			if (newTodo.data.success) {
 				todos.push({ todos: value });
-				console.log(value);
-				console.log(todos);
-				alert('New todo added');
 				setValue('');
 			}
 		} catch (error) {
@@ -29,7 +26,6 @@ const TodoList = ({}) => {
 				const newTodos = [...todos];
 				newTodos.splice(i, 1);
 				setTodos(newTodos);
-				alert('Todo removed');
 			}
 		} catch (error) {
 			alert(error.message);
