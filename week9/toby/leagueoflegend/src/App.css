@@ -1,0 +1,93 @@
+.App {
+	font-family: 'Oswald', sans-serif;
+}
+.champions__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 15px;
+}
+.Popup {
+	display: none;
+	background-color: #fff;
+	width: 800px;
+	height: 600px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 5px;
+	color: #fff;
+	overflow: hidden;
+}
+.Popup img {
+	position: absolute;
+	top: 18px;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.Popup__button {
+	background-color: aqua;
+	width: 100%;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	transition: 0.3s;
+}
+
+.Popup__button:hover {
+	background-color: aquamarine;
+}
+
+.Popup__switch {
+	background-color: aqua;
+	opacity: 1;
+	outline: none;
+	border: none;
+}
+.Popup.isActive {
+	display: flex;
+	flex-direction: column;
+}
+.Popup p {
+	display: block;
+	color: #000;
+	margin-left: 80px;
+}
+
+.Popup p h1 {
+	font-size: 80px;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+.Popup p h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+
+.Popup p div {
+	font-size: 20px;
+	width: 380px;
+	text-align: justify;
+}
+
+.champion {
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s;
+	margin-top: 15px;
+	text-align: center;
+}
+.champion:hover {
+	cursor: pointer;
+	background-color: #ddd;
+}
+
+.champion img {
+	width: 100%;
+	height: auto;
+}
