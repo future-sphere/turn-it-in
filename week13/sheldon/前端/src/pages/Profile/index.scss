@@ -1,0 +1,23 @@
+.profile-wraper {
+	max-width: 100%;
+	margin: auto;
+	background-color: #f2f2f2;
+	padding-bottom: 50px;
+	min-height: 100vh;
+	.post-container {
+		margin: auto;
+		width: 100%;
+		max-width: 1024px;
+	}
+	.comment-container {
+		margin: auto;
+		width: 100%;
+		max-width: 1024px;
+	}
+	.profilebox-change {
+		display: none;
+	}
+	.profilebox-upload {
+		display: none;
+	}
+}

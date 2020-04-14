@@ -1,0 +1,78 @@
+.signin-container {
+	display: none;
+	padding-top: 90px;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.active {
+	display: flex;
+}
+.big-title {
+	font-size: 100px;
+	font-weight: 300;
+	color: #1f8efa;
+	margin-bottom: 87px;
+}
+.small-title {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 35px;
+}
+.signin-wrapper {
+	padding: 40px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 650px;
+	a {
+		width: 100%;
+	}
+	input {
+		box-sizing: border-box;
+		width: 100%;
+		font-size: 18px;
+		padding: 25px;
+		border: 1px solid #eee;
+		outline: none;
+		margin-bottom: 20px;
+	}
+	.signin-password {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		color: #999;
+		margin-bottom: 30px;
+		font-size: 18px;
+		input {
+			width: auto;
+			margin: 0px;
+			margin-right: 12px;
+		}
+	}
+}
+.bf-blue-button {
+	background-color: #1f8efa;
+	border: none;
+	outline: none;
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+	width: 100%;
+	padding: 16px 0px;
+	cursor: pointer;
+}
+.bf-blue-button:hover {
+	background-color: #1967b6;
+}
+.signin-noaccount {
+	color: #333;
+	font-size: 16px;
+	margin-top: 30px;
+	cursor: help;
+}
+.signin-noaccount:hover {
+	text-decoration: underline;
+	color: #1f8efa;
+}
