@@ -1,0 +1,23 @@
+.select-dropdown-container {
+  position: relative;
+
+  i {
+    position: absolute;
+    font-size: 22px;
+    right: 30px;
+    top: calc(50% - 40px);
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .gender-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background-color: #fff;
+    padding: 0 20px;
+    box-shadow: 2px 4px 4px #eee;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
