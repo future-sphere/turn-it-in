@@ -1,0 +1,85 @@
+.register-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f2f2f2;
+
+	h1 {
+		font-size: 100px;
+		font-weight: 300;
+		color: #1f8efa;
+		margin-top: 90px;
+		margin-bottom: 88px;
+		text-align: center;
+	}
+
+	.register {
+		padding: 40px;
+		background: #fff;
+		box-shadow: 2px 4px 4px #eeeeee;
+		border-radius: 16px;
+		margin-bottom: 244px;
+
+		h3 {
+			font-size: 32px;
+			margin-bottom: 35px;
+			text-align: center;
+		}
+
+		form {
+			width: 100%;
+
+			.input-container {
+				width: inherit;
+
+				&.isHalfWidth {
+					display: inline-block;
+					width: 50%;
+				}
+
+				input {
+					width: 100%;
+					padding: 24px;
+					margin-bottom: 20px;
+					font-size: 18px;
+					border: 1px solid #eeeeee;
+					box-shadow: 0px 2px 2px #eeeeee;
+				}
+			}
+
+			.file-uploader {
+				width: inherit;
+				padding: 24px 26px;
+				box-shadow: 0px 2px 4px #eeeeee;
+				margin-bottom: 35px;
+
+				input {
+					padding: 0;
+					border: none;
+					box-shadow: none;
+				}
+
+				.image-container {
+					width: 126px;
+					height: 126px;
+					border: 1px solid rgb(150, 150, 150);
+
+					img {
+						width: 124px;
+						height: 124px;
+					}
+				}
+			}
+
+			button {
+				padding: 16px 260px;
+				font-size: 32px;
+				font-weight: bold;
+				color: #ffffff;
+				background: #1f8efa;
+				border-radius: 5px;
+			}
+		}
+	}
+}

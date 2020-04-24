@@ -1,0 +1,19 @@
+.home {
+	padding: 100px 0;
+
+	.home-body {
+		max-width: 1024px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 28% 70%;
+		column-gap: 22px;
+
+		.home-body-right {
+			.home-post {
+				box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+				margin-bottom: 30px;
+				font-size: 14px;
+			}
+		}
+	}
+}

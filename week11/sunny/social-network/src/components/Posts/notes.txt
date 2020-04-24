@@ -1,0 +1,10 @@
+we have a list of posts
+  - each post need to be a react component
+    - inside of each posts
+    - request for user infomation based on id
+
+    that means: 
+      - 57 posts = 57 react components = 57 axios requests
+
+
+      每一个post 有单独的author id 来管理

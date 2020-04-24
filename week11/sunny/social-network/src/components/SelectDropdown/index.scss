@@ -1,0 +1,47 @@
+.select-container {
+	position: relative;
+	width: 100%;
+	padding: 24px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	border: 1px solid #eeeeee;
+	box-shadow: 0px 2px 2px #eeeeee;
+
+	.select-visible {
+		color: rgb(95, 95, 95);
+		display: flex;
+		justify-content: space-between;
+	}
+	.select-dropdown {
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+		height: 0;
+		opacity: 0;
+		transition-duration: 100ms;
+		position: absolute;
+		background: #eee;
+		top: 70px;
+		right: 0;
+
+		&.show {
+			height: auto;
+			opacity: 1;
+		}
+
+		.option {
+			width: 100%;
+			padding: 6px 28px;
+			border-bottom: 1px solid rgb(255, 255, 255);
+			box-shadow: 2px 2px 0px #cfcdcd;
+
+			&:hover {
+				background: #739aee3b;
+			}
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}

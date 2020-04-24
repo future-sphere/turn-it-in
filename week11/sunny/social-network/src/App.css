@@ -1,0 +1,51 @@
+* {
+	font-family: Helvetica, Neue, sans-serif, Arial;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 0;
+}
+h2 {
+	margin: 0;
+}
+h3 {
+	margin: 0;
+}
+h4 {
+	margin: 0;
+}
+h5 {
+	margin: 0;
+}
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+input {
+	outline: none;
+}
+
+.link {
+	text-decoration: none;
+	color: #000;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	background: #f2f2f2;
+	min-height: 100vh;
+}

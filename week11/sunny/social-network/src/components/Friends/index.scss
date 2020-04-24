@@ -1,0 +1,66 @@
+.friends {
+	background: #f7f7f7;
+	box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+	border-radius: 6px;
+
+	.title {
+		background: #1f8efa;
+		box-shadow: inset 0px -1px 0px #f5f7fa;
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+		padding: 20px 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h4 {
+			color: #fff;
+			font-weight: bold;
+			font-size: 22px;
+		}
+		input {
+			width: 212px;
+			height: 30px;
+			padding: 0 18px;
+			border-radius: 15px;
+		}
+	}
+
+	.content {
+		padding: 15px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 15px;
+
+		.card {
+			display: flex;
+			align-items: center;
+			background: #fff;
+			box-shadow: 0px 2px 4px #eeeeee;
+
+			img {
+				width: 100px;
+				height: 100px;
+				margin-right: 22px;
+			}
+
+			.friend-name {
+				margin-right: 80px;
+				h5 {
+					color: #1f8efa;
+				}
+				p {
+					font-weight: 300;
+					font-size: 14px;
+				}
+			}
+
+			.icon {
+				img {
+					width: 16px;
+					height: 16px;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
