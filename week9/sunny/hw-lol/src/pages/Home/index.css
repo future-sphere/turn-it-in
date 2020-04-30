@@ -1,0 +1,62 @@
+h1 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.home {
+	width: 100%;
+	background: linear-gradient(
+			217deg,
+			rgba(8, 1, 1, 0.87),
+			rgba(56, 8, 8, 0) 70.71%
+		),
+		linear-gradient(127deg, rgba(132, 196, 132, 0.8), rgba(2, 6, 19, 0) 70.71%),
+		linear-gradient(336deg, rgba(6, 6, 48, 0.8), rgba(3, 3, 71, 0) 70.71%);
+	color: aliceblue;
+}
+
+.home h1 {
+	font-family: 'Trade Winds', cursive;
+	font-size: 48px;
+	text-align: center;
+	background: -webkit-linear-gradient(rgb(2, 2, 2), rgb(255, 208, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 50px;
+}
+
+.champions-container {
+	width: 100%;
+	max-width: 1024px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	column-gap: 10px;
+	row-gap: 10px;
+	padding-bottom: 50px;
+}
+
+.popup {
+	height: 65vh;
+	width: 60%;
+	background-color: rgba(27, 27, 27, 0.87);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 3px 5px 6px rgb(31, 39, 33);
+	border-radius: 30px;
+	display: none;
+}
+
+.popup.active {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 300;
+}

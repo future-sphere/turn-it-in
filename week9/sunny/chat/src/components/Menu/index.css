@@ -1,0 +1,63 @@
+.container {
+	border-bottom: 1px solid #868686;
+	padding: 20px;
+}
+
+.user {
+	display: flex;
+}
+
+.user img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.user div {
+	display: flex;
+	flex-direction: column;
+}
+
+.user h4 {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.user p {
+	font-size: 12px;
+}
+
+.container p {
+	font-size: 14px;
+	font-weight: 700;
+	color: #c0bdbd;
+	margin-bottom: 15px;
+}
+
+.container div {
+	margin-bottom: 20px;
+}
+
+.container div:last-of-type {
+	margin-bottom: 0;
+}
+
+.container i {
+	margin-right: 20px;
+}
+
+.container span {
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.footer p {
+	padding-top: 20px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+footer p {
+	padding-top: 20px;
+}
