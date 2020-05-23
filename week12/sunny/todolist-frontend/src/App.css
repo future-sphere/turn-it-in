@@ -1,0 +1,33 @@
+.App {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(175, 168, 65, 0.027);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+.todolist-container {
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 4px 5px rgb(194, 193, 193);
+	background: rgba(230, 231, 217, 0.795);
+	text-align: center;
+	color: rgb(63, 62, 62);
+}
+
+h1 {
+	margin: 0 0 8px 0;
+}
+
+button {
+	outline: none;
+}
