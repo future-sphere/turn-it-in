@@ -1,0 +1,53 @@
+.Banner {
+  background-color: #1f8efa;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  position: relative;
+  margin-bottom: 120px;
+
+  .banner-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -86px;
+    left: 208px;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    .banner-text {
+
+      h3 {
+        color: #FFF;
+        font-size: 36px;
+        margin-left: 60px;
+      }
+
+      .user-list-container {
+        display: flex;
+        list-style: none;
+        margin-left: 60px;
+        font-size: 24px;
+        color: #000;
+
+        .user-link {
+          margin-right: 50px;
+          cursor: pointer;
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+
+        .user-link:hover {
+          color: #1f8efa;
+        }
+      }
+    }
+  }
+}
