@@ -1,0 +1,101 @@
+.menu-wrapper {
+	background-color: #202932;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+h2 {
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
+	padding: 16px;
+	border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.item {
+	display: flex;
+}
+
+.account-box {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	padding-left: 16px;
+}
+
+.title h5 {
+	margin: 0;
+}
+
+.title h4 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.account-box img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.account-box h4 {
+	color: #fff;
+}
+.account-box h5 {
+	color: rgba(225, 225, 225, 0.5);
+}
+
+.container {
+	color: #fff;
+	border-top: 1px solid rgba(225, 225, 225, 0.2);
+	border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.container h3 {
+	color: rgba(225, 225, 225, 0.5);
+	font-size: 10px;
+	padding: 16px 0 0 16px;
+}
+
+.item {
+	margin: 20px 0 20px 6px;
+}
+
+.item h4 {
+	margin: 0;
+	margin-left: 12px;
+	font-size: 12px;
+}
+
+.item p {
+	margin: 0;
+	margin-left: 12px;
+	font-size: 12px;
+}
+
+.item i {
+	margin-left: 12px;
+	font-size: 14px;
+}
+
+.bottom h3 {
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
+	padding: 16px;
+}
+
+.bottom p {
+	margin: 0;
+	color: rgba(225, 225, 225, 0.5);
+	font-size: 12px;
+	padding: 0 16px 16px 16px;
+	font-family: 900;
+}
